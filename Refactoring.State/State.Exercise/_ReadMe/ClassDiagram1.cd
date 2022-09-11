@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Jarai.Refactoring.State.Original.Telefon">
+    <Position X="6.5" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAEAAAAAAAAAEAAAAAAAAAgAAAAABABAA=</HashCode>
+      <FileName>Telefon.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_aktuellerZustand" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="Jarai.Refactoring.State.Original.TelefonZustand">
+    <Position X="10.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAACAAAIAA=</HashCode>
+      <FileName>TelefonZustand.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

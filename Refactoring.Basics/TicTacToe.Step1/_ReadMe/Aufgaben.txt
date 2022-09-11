@@ -1,0 +1,5 @@
+﻿Aufgabe: Testbarkeit ermöglichen und Tests erstellen
+====================================================
+
+Userinterface extrahieren
+Approval Tests erstellen

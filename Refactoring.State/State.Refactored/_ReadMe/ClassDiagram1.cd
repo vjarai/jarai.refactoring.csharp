@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Jarai.Refactoring.State.Refactored.Telefon">
+    <Position X="6.5" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>gAEAAAAAAAAAEAAAAAAAAAEAAAAAAAAAgAAAAABABAA=</HashCode>
+      <FileName>Telefon.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_aktuellerZustand" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Jarai.Refactoring.State.Refactored.Zustand">
+    <Position X="10" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAEAAEAAAAAAAAAAAAAAAAgAAAAABABBA=</HashCode>
+      <FileName>Zustand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Refactoring.State.Refactored.Abgehoben">
+    <Position X="7.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Abgehoben.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Refactoring.State.Refactored.Aufgelegt">
+    <Position X="10" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Aufgelegt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Refactoring.State.Refactored.Verbunden">
+    <Position X="12.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Verbunden.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
