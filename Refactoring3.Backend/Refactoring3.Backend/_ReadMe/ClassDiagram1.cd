@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Refactoring3.Backend.Original.BackendService">
+    <Position X="1.5" Y="1.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BackendService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Refactoring3.Backend.Original.Responses.CalculateSumResponse">
+    <Position X="10.5" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Responses\CalculateSumResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Refactoring3.Backend.Original.Responses.CalculateTaxResponse">
+    <Position X="12.75" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Responses\CalculateTaxResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Refactoring3.Backend.Original.Responses.Response">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Responses\Response.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Refactoring3.Backend.Original.Requests.Request">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Request.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Refactoring3.Backend.Original.Requests.CalculateSumRequest">
+    <Position X="5.25" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\CalculateSumRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Refactoring3.Backend.Original.Requests.CalculateTaxRequest">
+    <Position X="7.5" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\CalculateTaxRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
