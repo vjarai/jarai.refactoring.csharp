@@ -1,28 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Glücksspiel.Program">
-    <Position X="3.25" Y="2.25" Width="1.75" />
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Jarai.Refactoring.Zahlenraten.Refactored.ZahlenratenGame">
+    <Position X="2.5" Y="2.25" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAAAA=</HashCode>
-      <FileName>Zahlenraten.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAQEAQAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>ZahlenratenGame.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Console" />
+      <Field Name="_uiService" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="Glücksspiel.FakeUiService">
-    <Position X="7" Y="4.25" Width="1.5" />
+  <Class Name="Jarai.Refactoring.Zahlenraten.Refactored.UiService">
+    <Position X="7.75" Y="5.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AQBAAAAAAAAAAAAIAAAgAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
-      <FileName>FakeUiService.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Glücksspiel.UiService">
-    <Position X="7" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AABAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AABAAAAAAAAAAAAIAAAAAgAAAAAAAAAAAAAAAgAAAAA=</HashCode>
       <FileName>UiService.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
+  <Interface Name="Jarai.Refactoring.Zahlenraten.Refactored.IUiService">
+    <Position X="7.75" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAIAAAAAgAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>IUiService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

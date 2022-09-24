@@ -16,7 +16,7 @@ namespace Glücksspiel.Tests
             // Arrange
             var fakeConsole = new FakeUiService(new[] { "200", "-1", "50", "" });
             Program.Console = fakeConsole;
-            Program.Z = 50;
+            Program.z = 50;
 
             // Act
             Program.Main(new[] { "" });
