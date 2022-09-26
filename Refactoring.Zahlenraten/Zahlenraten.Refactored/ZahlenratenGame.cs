@@ -24,19 +24,19 @@ namespace Jarai.Refactoring.Zahlenraten.Refactored
         public void Play()
         {
             int anzahlVersuche = 0;
-            bool isGameWon;
+            int eingabezahl;
 
             do
             {
                 _uiService.WriteLine(anzahlVersuche == 0 ? "Errate eine Zahl zwischen 1 und 100" : "Bitte Versuchen sie es erneut");
 
-                int eingabezahl = int.Parse(_uiService.ReadLine());
+                 eingabezahl = int.Parse(_uiService.ReadLine());
 
-                isGameWon = ProzessInput(eingabezahl);
+                 ProzessInput(eingabezahl);
 
                 anzahlVersuche++;
 
-            } while (!isGameWon);
+            } while (eingabezahl != _geheimzahl);
 
 
             _uiService.WriteLine("du hast" + (anzahlVersuche - 1) + "Versuche gebraucht");
@@ -45,22 +45,19 @@ namespace Jarai.Refactoring.Zahlenraten.Refactored
 
 
 
-        public bool ProzessInput(int eingabezahl)
+        public void ProzessInput(int eingabezahl)
         {
             if (eingabezahl < _geheimzahl)
             {
                 _uiService.WriteInputToSmall();
-                return false;
             }
             else if (eingabezahl > _geheimzahl)
             {
                 _uiService.WriteInputToBig();
-                return false;
             }
             else
             {
                 _uiService.WriteInputCorrect();
-                return true;
             }
         }
 

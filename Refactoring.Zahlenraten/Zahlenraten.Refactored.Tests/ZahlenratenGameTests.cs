@@ -15,11 +15,10 @@ namespace Jarai.Refactoring.Zahlenraten.Refactored.Tests
             var target = new ZahlenratenGame(uiMock.Object, 50);
 
             // Act
-            var actual = target.ProzessInput(-1);
+            target.ProzessInput(-1);
 
             // Assert
             uiMock.VerifyAll();
-            Assert.False(actual);
         }
 
         [Fact()]
@@ -32,11 +31,10 @@ namespace Jarai.Refactoring.Zahlenraten.Refactored.Tests
             var target = new ZahlenratenGame(uiMock.Object, 50);
 
             // Act
-            var actual = target.ProzessInput(100);
+            target.ProzessInput(100);
 
             // Assert
             uiMock.VerifyAll();
-            Assert.False(actual);
         }
 
 
@@ -51,11 +49,10 @@ namespace Jarai.Refactoring.Zahlenraten.Refactored.Tests
             var target = new ZahlenratenGame(uiMock.Object, 50);
 
             // Act
-            var actual = target.ProzessInput(50);
+            target.ProzessInput(50);
 
             // Assert
             uiMock.VerifyAll();
-            Assert.True(actual);
         }
     }
 }
