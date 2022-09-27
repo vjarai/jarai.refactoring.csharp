@@ -89,11 +89,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 Resharper", "5 Resharper"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resharper.InheritanceToDelegation", "Resharper.InheritanceToDelegation\Resharper.InheritanceToDelegation.csproj", "{333E15AA-86EA-43E7-A702-CBC5420C8205}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter.Original", "Refactoring.Adapter\Adapter.Original.csproj", "{869CBD3E-9DAF-42C1-AE99-2FF464A0EA6A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 Brief", "6 Brief", "{E7962031-85A0-481A-BB2A-F47FA2C98369}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter.Original.Tests", "Refactoring.Adapter.Tests\Adapter.Original.Tests.csproj", "{BEC72830-1166-4C0C-A5BB-A22BBF46CF67}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Letter.Original", "Refactoring.Adapter\Adapter.Original\Letter.Original.csproj", "{869CBD3E-9DAF-42C1-AE99-2FF464A0EA6A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 Adapter", "6 Adapter", "{E7962031-85A0-481A-BB2A-F47FA2C98369}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Letter.Original.Tests", "Refactoring.Adapter\Adapter.Original.Tests\Letter.Original.Tests.csproj", "{BEC72830-1166-4C0C-A5BB-A22BBF46CF67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Letter.Refactored", "Refactoring.Adapter\Adapter.Refactored\Letter.Refactored.csproj", "{DD0BCF94-246C-4B41-909C-93D3A34C858A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Letter.Refactored.Tests", "Refactoring.Adapter\Adapter.Refactored.Tests\Letter.Refactored.Tests.csproj", "{0813AE00-F0CC-4A84-B651-2ED74705F94B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -209,6 +213,14 @@ Global
 		{BEC72830-1166-4C0C-A5BB-A22BBF46CF67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEC72830-1166-4C0C-A5BB-A22BBF46CF67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEC72830-1166-4C0C-A5BB-A22BBF46CF67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD0BCF94-246C-4B41-909C-93D3A34C858A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD0BCF94-246C-4B41-909C-93D3A34C858A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD0BCF94-246C-4B41-909C-93D3A34C858A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD0BCF94-246C-4B41-909C-93D3A34C858A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0813AE00-F0CC-4A84-B651-2ED74705F94B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0813AE00-F0CC-4A84-B651-2ED74705F94B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0813AE00-F0CC-4A84-B651-2ED74705F94B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0813AE00-F0CC-4A84-B651-2ED74705F94B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -254,6 +266,8 @@ Global
 		{333E15AA-86EA-43E7-A702-CBC5420C8205} = {0EF55607-5B22-47F3-AE21-37BEC2400408}
 		{869CBD3E-9DAF-42C1-AE99-2FF464A0EA6A} = {E7962031-85A0-481A-BB2A-F47FA2C98369}
 		{BEC72830-1166-4C0C-A5BB-A22BBF46CF67} = {E7962031-85A0-481A-BB2A-F47FA2C98369}
+		{DD0BCF94-246C-4B41-909C-93D3A34C858A} = {E7962031-85A0-481A-BB2A-F47FA2C98369}
+		{0813AE00-F0CC-4A84-B651-2ED74705F94B} = {E7962031-85A0-481A-BB2A-F47FA2C98369}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {53ECCFEC-A574-48C6-8787-56F483DC5AD0}

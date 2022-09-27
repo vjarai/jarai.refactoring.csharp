@@ -1,4 +1,4 @@
-﻿namespace Jarai.Refactoring.Adapter.Original
+﻿namespace Jarai.Refactoring.Adapter.Refactored
 {
     public class PdfCreatorToPrinterAdapter : Printer
     {
