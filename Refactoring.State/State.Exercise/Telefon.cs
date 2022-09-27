@@ -4,7 +4,7 @@ namespace Jarai.Refactoring.State.Exercise
 {
     public class Telefon
     {
-        private TelefonZustand _aktuellerZustand;
+        private TelefonZustand AktuellerZustand { get; set; }
 
 
         public Telefon()
@@ -12,18 +12,21 @@ namespace Jarai.Refactoring.State.Exercise
 
         }
 
+        /// <summary>
+        /// Konstruktor nur für Tests
+        /// </summary>
         internal Telefon(TelefonZustand aktuellerZustand)
         {
-            _aktuellerZustand = aktuellerZustand;
+            AktuellerZustand = aktuellerZustand;
         }
 
 
         public void Abheben()
         {
-            switch (_aktuellerZustand)
+            switch (AktuellerZustand)
             {
                 case TelefonZustand.Aufgelegt:
-                    _aktuellerZustand = TelefonZustand.Abgehoben;
+                    AktuellerZustand = TelefonZustand.Abgehoben;
                     break;
                 case TelefonZustand.Abgehoben:
                 case TelefonZustand.Verbunden:
@@ -35,10 +38,10 @@ namespace Jarai.Refactoring.State.Exercise
 
         public void AnnehmenAnruf()
         {
-            switch (_aktuellerZustand)
+            switch (AktuellerZustand)
             {
                 case TelefonZustand.Aufgelegt:
-                    _aktuellerZustand = TelefonZustand.Verbunden;
+                    AktuellerZustand = TelefonZustand.Verbunden;
                     break;
                 case TelefonZustand.Abgehoben:
                 case TelefonZustand.Verbunden:
@@ -51,11 +54,11 @@ namespace Jarai.Refactoring.State.Exercise
 
         public void Auflegen()
         {
-            switch (_aktuellerZustand)
+            switch (AktuellerZustand)
             {
                 case TelefonZustand.Verbunden:
                 case TelefonZustand.Abgehoben:
-                    _aktuellerZustand = TelefonZustand.Aufgelegt;
+                    AktuellerZustand = TelefonZustand.Aufgelegt;
                     break;
                 case TelefonZustand.Aufgelegt:
                     throw new InvalidOperationException();
@@ -66,7 +69,7 @@ namespace Jarai.Refactoring.State.Exercise
 
         public void Sprechen()
         {
-            switch (_aktuellerZustand)
+            switch (AktuellerZustand)
             {
                 case TelefonZustand.Abgehoben:
                 case TelefonZustand.Aufgelegt:
@@ -80,10 +83,10 @@ namespace Jarai.Refactoring.State.Exercise
 
         public void Wählen()
         {
-            switch (_aktuellerZustand)
+            switch (AktuellerZustand)
             {
                 case TelefonZustand.Abgehoben:
-                    _aktuellerZustand = TelefonZustand.Verbunden;
+                    AktuellerZustand = TelefonZustand.Verbunden;
                     break;
 
                 case TelefonZustand.Aufgelegt:
