@@ -35,4 +35,4 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
-[assembly: InternalsVisibleTo("Jarai.Refactoring.State.Exercise.Tests")]
+[assembly: InternalsVisibleTo("Jarai.Refactoring.Telefon.Exercise.Tests")]
