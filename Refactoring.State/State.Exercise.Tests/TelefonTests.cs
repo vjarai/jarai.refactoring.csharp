@@ -21,7 +21,7 @@ namespace Jarai.Refactoring.State.Exercise.Tests
 
 
         [Fact()]
-        public void Kann_annehmenAnruf_auflegen()
+        public void Kann_auflegen_wenn_Verbunden()
         {
             // Arrange
             var telefon = new Telefon();
@@ -33,7 +33,7 @@ namespace Jarai.Refactoring.State.Exercise.Tests
         }
 
         [Fact()]
-        public void Kann_abheben_auflegen()
+        public void Kann_auflegen_wenn_Abgehoben()
         {
             // Arrange
             var telefon = new Telefon(TelefonZustand.Abgehoben);
@@ -44,20 +44,20 @@ namespace Jarai.Refactoring.State.Exercise.Tests
         }
 
         [Fact()]
-        public void Kann_NICHT_im_Zustand_Abgehoben_sprechen()
+        public void Kann_NICHT_sprechen_wenn_Abgehoben()
         {
             // Arrange
             var telefon = new Telefon(TelefonZustand.Abgehoben);
 
             // Act
-            
+
             // Assert
             Assert.Throws<InvalidOperationException>(telefon.Sprechen);
         }
 
 
         [Fact()]
-        public void Kann_NICHT_im_Zustand_Verbunden_wählen()
+        public void Kann_NICHT_wählen_wenn_verbunden()
         {
             // Arrange
             var telefon = new Telefon(TelefonZustand.Verbunden);
@@ -69,7 +69,7 @@ namespace Jarai.Refactoring.State.Exercise.Tests
         }
 
         [Fact()]
-        public void Kann_NICHT_im_Zustand_Verbunden_abheben()
+        public void Kann_NICHT_abheben_wenn_verbunden()
         {
             // Arrange
             var telefon = new Telefon(TelefonZustand.Verbunden);
@@ -81,7 +81,7 @@ namespace Jarai.Refactoring.State.Exercise.Tests
         }
 
         [Fact()]
-        public void Kann_NICHT_im_Zustand_Verbunden_annehmenAnruf()
+        public void Kann_NICHT_annehmenAnruf_wenn_Verbunden()
         {
             // Arrange
             var telefon = new Telefon(TelefonZustand.Verbunden);
@@ -94,7 +94,7 @@ namespace Jarai.Refactoring.State.Exercise.Tests
 
 
         [Fact()]
-        public void Kann_NICHT_im_Zustand_Abgehoben_annehmenAnruf()
+        public void Kann_NICHT_annehmenAnruf_wenn_Abgehoben()
         {
             // Arrange
             var telefon = new Telefon(TelefonZustand.Abgehoben);
@@ -106,7 +106,7 @@ namespace Jarai.Refactoring.State.Exercise.Tests
         }
 
         [Fact()]
-        public void Kann_NICHT_im_Zustand_Aufgelegt_wählen()
+        public void Kann_NICHT_wählen_wenn_Aufgelegt()
         {
             // Arrange
             var telefon = new Telefon(TelefonZustand.Aufgelegt);
@@ -118,7 +118,7 @@ namespace Jarai.Refactoring.State.Exercise.Tests
         }
 
         [Fact()]
-        public void Kann_NICHT_im_Zustand_Aufgelegt_sprechen()
+        public void Kann_NICHT_sprechen_wenn_Aufgelegt()
         {
             // Arrange
             var telefon = new Telefon(TelefonZustand.Aufgelegt);
@@ -130,7 +130,7 @@ namespace Jarai.Refactoring.State.Exercise.Tests
         }
 
         [Fact()]
-        public void Kann_NICHT_im_Zustand_Aufgelegt_auflegen()
+        public void Kann_NICHT_auflegen_wenn_Aufgelegt()
         {
             // Arrange
             var telefon = new Telefon(TelefonZustand.Aufgelegt);
@@ -143,7 +143,7 @@ namespace Jarai.Refactoring.State.Exercise.Tests
 
 
         [Fact()]
-        public void Kann_NICHT_im_Zustand_Abgehoben_abheben()
+        public void Kann_NICHT_abheben_wenn_Abgehoben()
         {
             // Arrange
             var telefon = new Telefon(TelefonZustand.Abgehoben);
