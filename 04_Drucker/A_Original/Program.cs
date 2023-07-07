@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jarai.Refactoring.Adapter.Original
+namespace Jarai.Refactoring.Drucker.Original
 {
     internal class Program
     {

@@ -1,7 +1,7 @@
 ﻿using Moq;
 using Xunit;
 
-namespace Jarai.Refactoring.Adapter.Original.Tests
+namespace Jarai.Refactoring.Drucker.Original.Tests
 {
     public class LetterTests
     {

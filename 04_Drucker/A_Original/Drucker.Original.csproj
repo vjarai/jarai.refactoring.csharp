@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{869CBD3E-9DAF-42C1-AE99-2FF464A0EA6A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Jarai.Refactoring.Adapter.Original</RootNamespace>
-    <AssemblyName>Jarai.Refactoring.Adapter.Original</AssemblyName>
+    <RootNamespace>Jarai.Refactoring.Drucker.Original</RootNamespace>
+    <AssemblyName>Jarai.Refactoring.Drucker.Original</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

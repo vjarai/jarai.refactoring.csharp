@@ -6,8 +6,8 @@
     <ProjectGuid>{BEC72830-1166-4C0C-A5BB-A22BBF46CF67}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Jarai.Refactoring.Adapter.Original.Tests</RootNamespace>
-    <AssemblyName>Jarai.Refactoring.Adapter.Original.Tests</AssemblyName>
+    <RootNamespace>Jarai.Refactoring.Drucker.Original.Tests</RootNamespace>
+    <AssemblyName>Jarai.Refactoring.Drucker.Original.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

@@ -1,4 +1,4 @@
-﻿namespace Jarai.Refactoring.Adapter.Refactored
+﻿namespace Jarai.Refactoring.Drucker.Refactored
 {
     public class Letter
     {

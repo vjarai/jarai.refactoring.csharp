@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace Jarai.Refactoring.State.Refactored
+namespace Jarai.Refactoring.Telefon.Refactored
 {
     public class Abgehoben : Zustand
     {

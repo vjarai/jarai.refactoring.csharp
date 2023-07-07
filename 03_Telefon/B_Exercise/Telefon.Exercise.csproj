@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8E3FEEEC-60B7-4CE3-9325-0FA90DABE519}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Jarai.Refactoring.State.Exercise</RootNamespace>
-    <AssemblyName>Jarai.Refactoring.State.Exercise</AssemblyName>
+    <RootNamespace>Jarai.Refactoring.Telefon.Exercise</RootNamespace>
+    <AssemblyName>Jarai.Refactoring.Telefon.Exercise</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

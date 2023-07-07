@@ -1,7 +1,7 @@
 ﻿using System;
 using Xunit;
 
-namespace Jarai.Refactoring.State.Original.Tests
+namespace Jarai.Refactoring.Telefon.Original.Tests
 {
     public class TelefonTests
     {

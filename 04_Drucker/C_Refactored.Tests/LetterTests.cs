@@ -1,4 +1,5 @@
-﻿using Moq;
+﻿using Jarai.Refactoring.Drucker.Refactored;
+using Moq;
 using Xunit;
 
 namespace Jarai.Refactoring.Adapter.Refactored.Tests

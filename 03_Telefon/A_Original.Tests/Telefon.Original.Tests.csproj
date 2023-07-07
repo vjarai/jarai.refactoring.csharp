@@ -10,8 +10,8 @@
     <ProjectGuid>{2E0C825B-6582-4524-A0C8-A65B31826F4C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Jarai.Refactoring.State.Original.Tests</RootNamespace>
-    <AssemblyName>Jarai.Refactoring.State.Original.Tests</AssemblyName>
+    <RootNamespace>Jarai.Refactoring.Telefon.Original.Tests</RootNamespace>
+    <AssemblyName>Jarai.Refactoring.Telefon.Original.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

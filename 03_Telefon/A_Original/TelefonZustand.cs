@@ -1,4 +1,4 @@
-﻿namespace Jarai.Refactoring.State.Original
+﻿namespace Jarai.Refactoring.Telefon.Original
 {
     public enum TelefonZustand
     {

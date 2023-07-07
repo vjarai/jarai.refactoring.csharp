@@ -8,8 +8,8 @@
     <ProjectGuid>{DD0BCF94-246C-4B41-909C-93D3A34C858A}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Jarai.Refactoring.Adapter.Refactored</RootNamespace>
-    <AssemblyName>Jarai.Refactoring.Adapter.Refactored</AssemblyName>
+    <RootNamespace>Jarai.Refactoring.Drucker.Refactored</RootNamespace>
+    <AssemblyName>Jarai.Refactoring.Drucker.Refactored</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>

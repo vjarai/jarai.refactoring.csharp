@@ -1,6 +1,6 @@
 using System;
 
-namespace Jarai.Refactoring.State.Original
+namespace Jarai.Refactoring.Telefon.Original
 {
     public class Telefon
     {

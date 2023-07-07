@@ -1,4 +1,4 @@
-﻿namespace Jarai.Refactoring.State.Exercise
+﻿namespace Jarai.Refactoring.Telefon.Exercise
 {
     public enum TelefonZustand
     {
