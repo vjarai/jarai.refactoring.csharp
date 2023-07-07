@@ -71,9 +71,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Chain.Refactored\Pattern.Chain.Refactored.csproj">
+    <ProjectReference Include="..\C_Refactored\Backend.Refactored.csproj">
       <Project>{3876CC41-23F3-4B23-86D4-226786F697C8}</Project>
-      <Name>Pattern.Chain.Refactored</Name>
+      <Name>Backend.Refactored</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

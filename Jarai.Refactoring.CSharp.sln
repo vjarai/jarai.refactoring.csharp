@@ -49,15 +49,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe.Refactored", "02_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe.Refactored.Tests", "02_TicTacToe\D_Refactored.Tests\TicTacToe.Refactored.Tests.csproj", "{A884F31B-D4E8-432D-81F9-36D278CF89E7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 BackendService", "4 BackendService", "{D0C2F955-6319-4C0E-89C1-F99237344A7A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 Backend", "5 Backend", "{D0C2F955-6319-4C0E-89C1-F99237344A7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.Chain.Original", "Refactoring.Pattern.Chain\Chain.Original\Pattern.Chain.Original.csproj", "{4D049971-E860-4A6A-B1E4-665E9AD96964}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend.Original", "05_Backend\A_Original\Backend.Original.csproj", "{4D049971-E860-4A6A-B1E4-665E9AD96964}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.Chain.Original.Tests", "Refactoring.Pattern.Chain\Chain.Original.Tests\Pattern.Chain.Original.Tests.csproj", "{D57D7525-B13F-4DB0-95BD-32200A1ED6C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend.Original.Tests", "05_Backend\A_Original.Tests\Backend.Original.Tests.csproj", "{D57D7525-B13F-4DB0-95BD-32200A1ED6C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.Chain.Refactored", "Refactoring.Pattern.Chain\Chain.Refactored\Pattern.Chain.Refactored.csproj", "{3876CC41-23F3-4B23-86D4-226786F697C8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend.Refactored", "05_Backend\C_Refactored\Backend.Refactored.csproj", "{3876CC41-23F3-4B23-86D4-226786F697C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.Chain.Refactored.Tests", "Refactoring.Pattern.Chain\Chain.Refactored.Tests\Pattern.Chain.Refactored.Tests.csproj", "{A1D52C42-48B9-40FA-9CB9-EAC18B39EB55}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend.Refactored.Tests", "05_Backend\C_Refactored.Tests\Backend.Refactored.Tests.csproj", "{A1D52C42-48B9-40FA-9CB9-EAC18B39EB55}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "A Original", "A Original", "{502E8946-9512-42CD-A404-70B441890EFD}"
 EndProject
@@ -85,19 +85,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zahlenraten.Exercise", "01_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zahlenraten.Exercise.Tests", "01_Zahlenraten\C_Exercise.Tests\Zahlenraten.Exercise.Tests.csproj", "{F4AD96AC-D3A9-40A1-963B-406F86E3A8B7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 Resharper", "6 Resharper", "{0EF55607-5B22-47F3-AE21-37BEC2400408}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99 Sonstiges", "99 Sonstiges", "{0EF55607-5B22-47F3-AE21-37BEC2400408}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resharper.InheritanceToDelegation", "Resharper.InheritanceToDelegation\Resharper.InheritanceToDelegation.csproj", "{333E15AA-86EA-43E7-A702-CBC5420C8205}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 Printer", "5 Printer", "{E7962031-85A0-481A-BB2A-F47FA2C98369}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 Drucker", "4 Drucker", "{E7962031-85A0-481A-BB2A-F47FA2C98369}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.Adapter.Original", "04_Drucker\A_Original\Pattern.Adapter.Original.csproj", "{869CBD3E-9DAF-42C1-AE99-2FF464A0EA6A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drucker.Original", "04_Drucker\A_Original\Drucker.Original.csproj", "{869CBD3E-9DAF-42C1-AE99-2FF464A0EA6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.Adapter.Original.Tests", "04_Drucker\A_Original.Tests\Pattern.Adapter.Original.Tests.csproj", "{BEC72830-1166-4C0C-A5BB-A22BBF46CF67}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drucker.Original.Tests", "04_Drucker\A_Original.Tests\Drucker.Original.Tests.csproj", "{BEC72830-1166-4C0C-A5BB-A22BBF46CF67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.Adapter.Refactored", "04_Drucker\C_Refactored\Pattern.Adapter.Refactored.csproj", "{DD0BCF94-246C-4B41-909C-93D3A34C858A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drucker.Refactored", "04_Drucker\C_Refactored\Drucker.Refactored.csproj", "{DD0BCF94-246C-4B41-909C-93D3A34C858A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.Adapter.Refactored.Tests", "04_Drucker\C_Refactored.Tests\Pattern.Adapter.Refactored.Tests.csproj", "{0813AE00-F0CC-4A84-B651-2ED74705F94B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Drucker.Refactored.Tests", "04_Drucker\C_Refactored.Tests\Drucker.Refactored.Tests.csproj", "{0813AE00-F0CC-4A84-B651-2ED74705F94B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "A Original", "A Original", "{9610A72D-5B71-4279-8925-C852EBAA3200}"
 EndProject
