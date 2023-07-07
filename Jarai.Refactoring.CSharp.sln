@@ -7,17 +7,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 TicTacToe", "2 TicTacToe"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 Telefon", "3 Telefon", "{059FAF95-6599-4331-8D2E-CB7BC82C4AC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.State.Original", "Refactoring.Pattern.State\State.Original\Pattern.State.Original.csproj", "{311515D7-738A-4A8B-8EDF-A20918101FD1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.State.Original", "03_Telefon\A_Original\Pattern.State.Original.csproj", "{311515D7-738A-4A8B-8EDF-A20918101FD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.State.Original.Tests", "Refactoring.Pattern.State\State.Original.Tests\Pattern.State.Original.Tests.csproj", "{2E0C825B-6582-4524-A0C8-A65B31826F4C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.State.Original.Tests", "03_Telefon\A_Original.Tests\Pattern.State.Original.Tests.csproj", "{2E0C825B-6582-4524-A0C8-A65B31826F4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.State.Exercise", "Refactoring.Pattern.State\State.Exercise\Pattern.State.Exercise.csproj", "{8E3FEEEC-60B7-4CE3-9325-0FA90DABE519}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.State.Exercise", "03_Telefon\B_Exercise\Pattern.State.Exercise.csproj", "{8E3FEEEC-60B7-4CE3-9325-0FA90DABE519}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.State.Exercise.Tests", "Refactoring.Pattern.State\State.Exercise.Tests\Pattern.State.Exercise.Tests.csproj", "{CEF4B981-AA1B-4538-935D-F5B6AA91DD11}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.State.Exercise.Tests", "03_Telefon\B_Exercise.Tests\Pattern.State.Exercise.Tests.csproj", "{CEF4B981-AA1B-4538-935D-F5B6AA91DD11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.State.Refactored", "Refactoring.Pattern.State\State.Refactored\Pattern.State.Refactored.csproj", "{8E873551-1912-443F-89CD-05304156DBA1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.State.Refactored", "03_Telefon\C_Refactored\Pattern.State.Refactored.csproj", "{8E873551-1912-443F-89CD-05304156DBA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.State.Refactored.Tests", "Refactoring.Pattern.State\State.Refactored.Tests\Pattern.State.Refactored.Tests.csproj", "{C9CEBEC9-0F82-49DF-901A-F4997BBC9931}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pattern.State.Refactored.Tests", "03_Telefon\C_Refactored.Tests\Pattern.State.Refactored.Tests.csproj", "{C9CEBEC9-0F82-49DF-901A-F4997BBC9931}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "A Original", "A Original", "{6D0200E9-709E-4E6D-840C-52FD950AA0EF}"
 EndProject

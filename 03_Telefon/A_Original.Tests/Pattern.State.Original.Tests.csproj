@@ -71,7 +71,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\State.Original\Pattern.State.Original.csproj">
+    <ProjectReference Include="..\A_Original\Pattern.State.Original.csproj">
       <Project>{311515D7-738A-4A8B-8EDF-A20918101FD1}</Project>
       <Name>Pattern.State.Original</Name>
     </ProjectReference>
