@@ -1,16 +1,14 @@
-﻿
-using GildedRoseKata;
-
-using System;
+﻿using System;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
+using GildedRoseKata.Refactored;
 using VerifyTests;
 using VerifyXunit;
 
 using Xunit;
 
-namespace GildedRoseTests
+namespace GildedRoseKata.Refactored.Tests
 {
     [UsesVerify]
     public class ApprovalTest

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace GildedRoseKata
+namespace GildedRoseKata.Original
 {
     public class Program
     {

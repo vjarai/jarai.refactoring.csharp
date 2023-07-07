@@ -5,6 +5,7 @@ using System;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
+using GildedRoseKata.Original;
 using VerifyTests;
 using VerifyXunit;
 

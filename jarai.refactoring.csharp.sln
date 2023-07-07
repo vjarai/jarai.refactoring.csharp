@@ -109,13 +109,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "B Excercise", "B Excercise"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 GildedRose", "6 GildedRose", "{EA6E2E2E-AE19-4BEA-82E7-690FC2B74085}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GildedRose.Original", "06_GildedRose\A_Original\GildedRose.Original.csproj", "{35EAE196-63B8-41A8-8219-AEDC1E488369}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GildedRoseKata.Original", "06_GildedRose\A_Original\GildedRoseKata.Original.csproj", "{35EAE196-63B8-41A8-8219-AEDC1E488369}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GildedRose.Original.Tests", "06_GildedRose\A_Original.Tests\GildedRose.Original.Tests.csproj", "{E3555634-3C17-43DB-9ECA-427C628EBAE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GildedRoseKata.Original.Tests", "06_GildedRose\A_Original.Tests\GildedRoseKata.Original.Tests.csproj", "{E3555634-3C17-43DB-9ECA-427C628EBAE8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GildedRose.Refactored", "06_GildedRose\C_Refactored\GildedRose.Refactored.csproj", "{286554FE-2CFD-4648-AAC3-A3FD551C6957}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GildedRoseKata.Refactored", "06_GildedRose\C_Refactored\GildedRoseKata.Refactored.csproj", "{286554FE-2CFD-4648-AAC3-A3FD551C6957}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GildedRose.Refactored.Tests", "06_GildedRose\C_Refactored.Tests\GildedRose.Refactored.Tests.csproj", "{28312F47-283A-4F9C-A20F-BF6CDC3B1F0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GildedRoseKata.Refactored.Tests", "06_GildedRose\C_Refactored.Tests\GildedRoseKata.Refactored.Tests.csproj", "{28312F47-283A-4F9C-A20F-BF6CDC3B1F0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
