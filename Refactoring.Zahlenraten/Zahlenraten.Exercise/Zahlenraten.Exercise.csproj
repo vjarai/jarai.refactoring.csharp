@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{7DD0D4ED-3F6F-4376-915F-2BBD227D83BE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Jarai.Refactoring.Zahlenraten.Original</RootNamespace>
-    <AssemblyName>Jarai.Refactoring.Zahlenraten.Original</AssemblyName>
+    <RootNamespace>Jarai.Refactoring.Zahlenraten.Exercise</RootNamespace>
+    <AssemblyName>Jarai.Refactoring.Zahlenraten.Exercise</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -7,11 +7,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C9CEBEC9-0F82-49DF-901A-F4997BBC9931}</ProjectGuid>
+    <ProjectGuid>{A1D52C42-48B9-40FA-9CB9-EAC18B39EB55}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Jarai.Refactoring.State.Refactored.Tests</RootNamespace>
-    <AssemblyName>Jarai.Refactoring.State.Refactored.Tests</AssemblyName>
+    <RootNamespace>Jarai.Refactoring.Backend.Refactored.Tests</RootNamespace>
+    <AssemblyName>Jarai.Refactoring.Backend.Refactored.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -64,16 +64,16 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="BackendServiceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TelefonTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\State.Refactored\State.Refactored.csproj">
-      <Project>{8E873551-1912-443F-89CD-05304156DBA1}</Project>
-      <Name>State.Refactored</Name>
+    <ProjectReference Include="..\Chain.Refactored\Pattern.Chain.Refactored.csproj">
+      <Project>{3876CC41-23F3-4B23-86D4-226786F697C8}</Project>
+      <Name>Pattern.Chain.Refactored</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

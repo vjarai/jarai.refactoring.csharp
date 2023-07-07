@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EntwickeltVonMaxMustermann
+namespace Jarai.Refactoring.Zahlenraten.Exercise
 {
     public class Program
     {

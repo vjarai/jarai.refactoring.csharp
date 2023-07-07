@@ -1,12 +1,6 @@
 ﻿using Xunit;
-using EntwickeltVonMaxMustermann;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace EntwickeltVonMaxMustermann.Tests
+namespace Jarai.Refactoring.Zahlenraten.Exercise.Tests
 {
     public class ProgramTests
     {
