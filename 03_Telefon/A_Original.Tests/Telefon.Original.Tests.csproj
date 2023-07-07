@@ -7,11 +7,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CEF4B981-AA1B-4538-935D-F5B6AA91DD11}</ProjectGuid>
+    <ProjectGuid>{2E0C825B-6582-4524-A0C8-A65B31826F4C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Jarai.Refactoring.State.Exercise.Tests</RootNamespace>
-    <AssemblyName>Jarai.Refactoring.State.Exercise.Tests</AssemblyName>
+    <RootNamespace>Jarai.Refactoring.State.Original.Tests</RootNamespace>
+    <AssemblyName>Jarai.Refactoring.State.Original.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -71,9 +71,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\B_Exercise\Pattern.State.Exercise.csproj">
-      <Project>{8E3FEEEC-60B7-4CE3-9325-0FA90DABE519}</Project>
-      <Name>Pattern.State.Exercise</Name>
+    <ProjectReference Include="..\A_Original\Telefon.Original.csproj">
+      <Project>{311515D7-738A-4A8B-8EDF-A20918101FD1}</Project>
+      <Name>Telefon.Original</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
