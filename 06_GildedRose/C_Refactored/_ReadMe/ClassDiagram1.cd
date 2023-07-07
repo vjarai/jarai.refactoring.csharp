@@ -3,7 +3,7 @@
   <Class Name="GildedRoseKata.Refactored.GildedRose">
     <Position X="2" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>BAAAAAAAAAIAAAAAAAAAAAAAADAAAAAAAAAAAAAAAAQ=</HashCode>
+      <HashCode>BAAAQAAAAAIAAAAAAAAAAAAAADAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>GildedRose.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -15,9 +15,9 @@
     </TypeIdentifier>
   </Class>
   <Class Name="GildedRoseKata.Refactored.SellableItem">
-    <Position X="5" Y="2.5" Width="1.5" />
+    <Position X="4.75" Y="2.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ProductItem.cs</FileName>
     </TypeIdentifier>
   </Class>
