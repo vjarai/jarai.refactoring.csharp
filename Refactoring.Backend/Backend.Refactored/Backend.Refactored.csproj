@@ -46,7 +46,7 @@
     <Compile Include="BackendService.cs" />
     <Compile Include="Handlers\CalculateSumHandler.cs" />
     <Compile Include="Handlers\CalculateTaxHandler.cs" />
-    <Compile Include="RequestHandler.cs" />
+    <Compile Include="Handlers\RequestHandler.cs" />
     <Compile Include="Requests\CalculateSumRequest.cs" />
     <Compile Include="Responses\CalculateSumResponse.cs" />
     <Compile Include="Requests\CalculateTaxRequest.cs" />

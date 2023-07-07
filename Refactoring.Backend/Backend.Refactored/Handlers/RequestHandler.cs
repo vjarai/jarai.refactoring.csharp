@@ -1,7 +1,7 @@
 ﻿using Jarai.Refactoring.Backend.Refactored.Requests;
 using Jarai.Refactoring.Backend.Refactored.Responses;
 
-namespace Jarai.Refactoring.Backend.Refactored
+namespace Jarai.Refactoring.Backend.Refactored.Handlers
 {
 
     public abstract class RequestHandler

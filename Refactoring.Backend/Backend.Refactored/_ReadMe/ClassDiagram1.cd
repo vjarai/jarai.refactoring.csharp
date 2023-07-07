@@ -1,48 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="Refactoring3.Backend.Refactored.BackendService">
-    <Position X="0.75" Y="5.75" Width="3.25" />
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Jarai.Refactoring.Backend.Refactored.BackendService">
+    <Position X="0.75" Y="5.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAEAABAAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>BackendService.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
       <Field Name="_requestHandlers" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="Refactoring3.Backend.Refactored.Responses.CalculateSumResponse">
+  <Class Name="Jarai.Refactoring.Backend.Refactored.Responses.CalculateSumResponse">
     <Position X="10.5" Y="3" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>Responses\CalculateSumResponse.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Refactoring3.Backend.Refactored.Responses.CalculateTaxResponse">
-    <Position X="12.75" Y="3" Width="2" />
+  <Class Name="Jarai.Refactoring.Backend.Refactored.Responses.CalculateTaxResponse">
+    <Position X="12.75" Y="3" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Responses\CalculateTaxResponse.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Refactoring3.Backend.Refactored.Requests.CalculateSumRequest">
-    <Position X="5.25" Y="3" Width="2" />
+  <Class Name="Jarai.Refactoring.Backend.Refactored.Requests.CalculateSumRequest">
+    <Position X="5.25" Y="3" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Requests\CalculateSumRequest.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Refactoring3.Backend.Refactored.Requests.CalculateTaxRequest">
-    <Position X="7.5" Y="3" Width="2" />
+  <Class Name="Jarai.Refactoring.Backend.Refactored.Requests.CalculateTaxRequest">
+    <Position X="7.5" Y="3" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Requests\CalculateTaxRequest.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="Refactoring3.Backend.Refactored.Requests.Request" Collapsed="true">
-    <Position X="6.5" Y="1.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Requests\Request.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Refactoring3.Backend.Refactored.Responses.Response" Collapsed="true">
@@ -52,32 +45,39 @@
       <FileName>Responses\Response.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Refactoring3.Backend.Refactored.RequestHandler">
-    <Position X="7.75" Y="6" Width="3.5" />
+  <Class Name="Jarai.Refactoring.Backend.Refactored.Handlers.RequestHandler">
+    <Position X="4.75" Y="5.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAABAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>RequestHandler.cs</FileName>
+      <FileName>Handlers\RequestHandler.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Refactoring3.Backend.Refactored.RequestHandler&lt;TRequest, TResponse&gt;" Collapsed="true">
-    <Position X="8" Y="8" Width="3.25" />
+  <Class Name="Jarai.Refactoring.Backend.Refactored.Handlers.RequestHandler&lt;TRequest, TResponse&gt;" Collapsed="true">
+    <Position X="4.5" Y="7.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAABAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>RequestHandler.cs</FileName>
+      <FileName>Handlers\RequestHandler.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Refactoring3.Backend.Refactored.Handlers.CalculateSumHandler" Collapsed="true">
-    <Position X="7.75" Y="9.5" Width="1.5" />
+  <Class Name="Jarai.Refactoring.Backend.Refactored.Handlers.CalculateSumHandler" Collapsed="true">
+    <Position X="1.75" Y="9.25" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Handlers\CalculateSumHandler.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Refactoring3.Backend.Refactored.Handlers.CalculateTaxHandler" Collapsed="true">
-    <Position X="10" Y="9.5" Width="1.5" />
+  <Class Name="Jarai.Refactoring.Backend.Refactored.Handlers.CalculateTaxHandler" Collapsed="true">
+    <Position X="5.75" Y="9.25" Width="3.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Handlers\CalculateTaxHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jarai.Refactoring.Backend.Refactored.Requests.Request">
+    <Position X="6.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Request.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

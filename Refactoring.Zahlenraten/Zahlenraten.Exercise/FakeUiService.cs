@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Reflection;
 
-namespace Glücksspiel
+namespace EntwickeltVonMaxMustermann
 {
     public class FakeUiService : UiService
     {

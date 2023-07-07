@@ -85,11 +85,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zahlenraten.Exercise", "Ref
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zahlenraten.Exercise.Tests", "Refactoring.Zahlenraten\Zahlenraten.Exercise.Tests\Zahlenraten.Exercise.Tests.csproj", "{F4AD96AC-D3A9-40A1-963B-406F86E3A8B7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 Resharper", "5 Resharper", "{0EF55607-5B22-47F3-AE21-37BEC2400408}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 Resharper", "6 Resharper", "{0EF55607-5B22-47F3-AE21-37BEC2400408}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resharper.InheritanceToDelegation", "Resharper.InheritanceToDelegation\Resharper.InheritanceToDelegation.csproj", "{333E15AA-86EA-43E7-A702-CBC5420C8205}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 Adapter", "6 Adapter", "{E7962031-85A0-481A-BB2A-F47FA2C98369}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 Adapter", "5 Adapter", "{E7962031-85A0-481A-BB2A-F47FA2C98369}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter.Original", "Refactoring.Adapter\Adapter.Original\Adapter.Original.csproj", "{869CBD3E-9DAF-42C1-AE99-2FF464A0EA6A}"
 EndProject

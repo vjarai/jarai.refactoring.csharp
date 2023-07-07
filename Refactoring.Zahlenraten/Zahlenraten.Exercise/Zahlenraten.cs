@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Glücksspiel
+namespace EntwickeltVonMaxMustermann
 {
     public class Program
     {

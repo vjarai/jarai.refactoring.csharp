@@ -1,12 +1,12 @@
 ﻿using Xunit;
-using Glücksspiel;
+using EntwickeltVonMaxMustermann;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Glücksspiel.Tests
+namespace EntwickeltVonMaxMustermann.Tests
 {
     public class ProgramTests
     {
