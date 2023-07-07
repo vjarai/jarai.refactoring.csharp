@@ -7,11 +7,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EF6C547C-636D-479C-B871-8D6CF46D3F2C}</ProjectGuid>
+    <ProjectGuid>{A884F31B-D4E8-432D-81F9-36D278CF89E7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Jarai.Refactoring.TicTacToe.Step1.Tests</RootNamespace>
-    <AssemblyName>Jarai.Refactoring.TicTacToe.Step1.Tests</AssemblyName>
+    <RootNamespace>Jarai.Refactoring.TicTacToe.Refactored.Tests</RootNamespace>
+    <AssemblyName>Jarai.Refactoring.TicTacToe.Refactored.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -65,17 +65,17 @@
   </Choose>
   <ItemGroup>
     <Compile Include="FakeUserInterface.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TicTacToeBoardTests.cs" />
     <Compile Include="TicTacToeGameTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="_ReadMe\ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TicTacToe.Step1\TicTacToe.Step1.csproj">
-      <Project>{EA3CC322-0673-43DD-8297-B58829C98DC2}</Project>
-      <Name>TicTacToe.Step1</Name>
+    <ProjectReference Include="..\D_Refactored\TicTacToe.Refactored.csproj">
+      <Project>{067eda01-194a-4dd9-a61a-a88423a4e0de}</Project>
+      <Name>TicTacToe.Refactored</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

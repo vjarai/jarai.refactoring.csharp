@@ -72,7 +72,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TicTacToe.Exercise\TicTacToe.Excercise.csproj">
+    <ProjectReference Include="..\C_Exercise\TicTacToe.Excercise.csproj">
       <Project>{FEB66EC2-1441-4FC6-8357-C43C1B1F3B00}</Project>
       <Name>TicTacToe.Excercise</Name>
     </ProjectReference>
