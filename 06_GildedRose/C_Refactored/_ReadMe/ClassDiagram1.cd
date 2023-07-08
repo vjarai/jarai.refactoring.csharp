@@ -17,7 +17,7 @@
   <Class Name="GildedRoseKata.Refactored.GildedRose">
     <Position X="3.25" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>BAAAwAAAAAIAAAAAAAAAAAAAADAAAAAACAAAAAAAAAQ=</HashCode>
+      <HashCode>BAAAwAAAAAIAAAAAAAAAAAAAADAAAAAACAAEAAAAAAQ=</HashCode>
       <FileName>GildedRose.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -25,6 +25,7 @@
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
       <Field Name="_items" />
+      <Field Name="_specialRules" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="GildedRoseKata.Refactored.Rules.BackstagePassRule">
