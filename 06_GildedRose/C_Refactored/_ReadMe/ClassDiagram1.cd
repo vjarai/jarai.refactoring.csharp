@@ -1,24 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="GildedRoseKata.Refactored.GildedRose">
-    <Position X="2" Y="0.5" Width="1.5" />
+    <Position X="0.5" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>BAAAQAAAAAIAAAAAAAAAAAAAADAAAAAAAAAAAAAAAAQ=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>GildedRose.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_items" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="GildedRoseKata.Refactored.Item">
-    <Position X="5" Y="0.5" Width="1.5" />
+    <Position X="1" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAABAAAAAAAQAAAAAAAAAAAAAAIAAAAA=</HashCode>
       <FileName>Item.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GildedRoseKata.Refactored.SellableItem">
-    <Position X="4.75" Y="2.5" Width="2" />
+  <Class Name="GildedRoseKata.Refactored.UpdateService">
+    <Position X="4" Y="0.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ProductItem.cs</FileName>
+      <HashCode>BAAAQAAAAAIAAAAAAAAAAAAAACAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>UpdateService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_rules" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="GildedRoseKata.Refactored.Rules.DefaultRule">
+    <Position X="7" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rules\DefaultRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GildedRoseKata.Refactored.Rules.UpdateRule">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAEAAAAAAAAAAAAAQAAAAABAAAAQ=</HashCode>
+      <FileName>Rules\UpdateRule.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
