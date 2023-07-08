@@ -13,13 +13,13 @@ public class GildedRose
 
     private readonly IList<Item> _items;
 
-    private readonly Dictionary<string, UpdateRule> _rules;
+    private readonly Dictionary<string, UpdateRule> _specialRules;
 
     public GildedRose(IList<Item> items)
     {
         _items = items;
 
-        _rules = new Dictionary<string, UpdateRule>
+        _specialRules = new Dictionary<string, UpdateRule>
         {
             {
                 AgedBrie,
@@ -45,7 +45,7 @@ public class GildedRose
 
     public void UpdateItem(Item itemToUpdate)
     {
-        if (!_rules.TryGetValue(itemToUpdate.Name, out var rule))
+        if (!_specialRules.TryGetValue(itemToUpdate.Name, out var rule))
             rule = _defaultRule;
 
         rule.Update(itemToUpdate);
