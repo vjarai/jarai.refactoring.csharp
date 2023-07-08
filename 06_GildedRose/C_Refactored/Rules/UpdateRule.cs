@@ -1,39 +1,31 @@
-﻿namespace GildedRoseKata.Refactored.Rules
+﻿namespace GildedRoseKata.Refactored.Rules;
+
+public class UpdateRule
 {
-    public class UpdateRule
+    public int MaxQuality { get; set; } = 50;
+
+    public int MinQuality { get; set; } = 0;
+
+    public int QualityChangePerDay { get; set; } = -1;
+
+    public int SellInChangePerDay { get; set; } = -1;
+
+    public virtual void Update(Item itemToUpdate)
     {
-        public int MaxQuality { get; set; } = 50;
+        itemToUpdate.SellIn += SellInChangePerDay;
 
-        public int MinQuality { get; set; } = 0;
+        UpdateQuality(itemToUpdate, QualityChangePerDay);
+    }
 
-        public int QualityChangePerDay { get; set; } = -1;
+    protected void UpdateQuality(Item item, int qualityChange)
+    {
+        if (item.SellIn < 0)
+            qualityChange *= 2;
 
-        public int SellInChangePerDay { get; set; } = -1;
+        item.Quality += qualityChange;
 
-        public virtual void Update(Item itemToUpdate)
-        {
-            itemToUpdate.SellIn += SellInChangePerDay;
+        if (item.Quality < MinQuality) item.Quality = MinQuality;
 
-            UpdateQuality(itemToUpdate, QualityChangePerDay);
-
-        }
-
-        protected void UpdateQuality(Item item, int qualityChange)
-        {
-            if (item.SellIn < 0)
-                qualityChange *= 2;
-
-            item.Quality += qualityChange;
-
-            if (item.Quality < MinQuality)
-            {
-                item.Quality = MinQuality;
-            }
-
-            if (item.Quality > MaxQuality)
-            {
-                item.Quality = MaxQuality;
-            }
-        }
+        if (item.Quality > MaxQuality) item.Quality = MaxQuality;
     }
 }
