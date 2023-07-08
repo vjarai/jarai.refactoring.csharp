@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using GildedRoseKata.Refactored.Rules;
 
-namespace GildedRoseKata.Refactored
+namespace GildedRoseKata.Refactored.Rules
 {
     public class BackstagePassRule : UpdateRule
     {

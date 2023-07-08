@@ -7,13 +7,12 @@ namespace GildedRoseKata.Refactored.Rules
 {
     public class UpdateService
     {
-        private Dictionary<string, UpdateRule> _rules;
+        private readonly Dictionary<string, UpdateRule> _rules;
+        private readonly UpdateRule _defaultRule = new UpdateRule();
 
-        public const string AgedBrie = "Aged Brie";
-
-        public const string BackstagePassesToATafkal80EtcConcert = "Backstage passes to a TAFKAL80ETC concert";
-
-        public const string SulfurasHandOfRagnaros = "Sulfuras, Hand of Ragnaros";
+        private const string AgedBrie = "Aged Brie";
+        private const string BackstagePassesToATafkal80EtcConcert = "Backstage passes to a TAFKAL80ETC concert";
+        private const string SulfurasHandOfRagnaros = "Sulfuras, Hand of Ragnaros";
 
         public UpdateService()
         {
@@ -27,7 +26,9 @@ namespace GildedRoseKata.Refactored.Rules
 
         public void UpdateItem(Item itemToUpdate)
         {
-            var rule = _rules[itemToUpdate.Name];
+            if (!_rules.TryGetValue(itemToUpdate.Name, out var rule))
+                rule = _defaultRule;
+
             rule.Update(itemToUpdate);
         }
     }

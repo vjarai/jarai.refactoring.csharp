@@ -19,28 +19,7 @@ namespace GildedRoseKata.Refactored
         {
             foreach (var item in _items)
             {
-                if (item.Name == UpdateService.AgedBrie
-                    || item.Name == UpdateService.BackstagePassesToATafkal80EtcConcert
-                    || item.Name == UpdateService.SulfurasHandOfRagnaros)
-                {
-                    _updateService.UpdateItem(item);
-                    continue;
-                }
-
-                if (item.Quality > 0)
-                {
-                    item.Quality -= 1;
-                }
-
-                item.SellIn -= 1;
-
-                if (item.SellIn < 0)
-                {
-                    if (item.Quality > 0)
-                    {
-                        item.Quality -= 1;
-                    }
-                }
+                _updateService.UpdateItem(item);
             }
         }
     }

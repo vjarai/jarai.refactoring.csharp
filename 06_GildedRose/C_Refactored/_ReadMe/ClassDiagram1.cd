@@ -1,15 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="GildedRoseKata.Refactored.GildedRose">
-    <Position X="0.5" Y="0.5" Width="2.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAAQ=</HashCode>
-      <FileName>GildedRose.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Field Name="_items" />
-    </ShowAsCollectionAssociation>
-  </Class>
   <Class Name="GildedRoseKata.Refactored.Item">
     <Position X="1" Y="2.75" Width="1.5" />
     <TypeIdentifier>
@@ -30,7 +20,7 @@
   <Class Name="GildedRoseKata.Refactored.Rules.UpdateRule">
     <Position X="7.5" Y="0.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAEAAAAAAAAAAAAAQAAAAABAAAAQ=</HashCode>
+      <HashCode>AAQIAAAAAAAAAAAAAEAAAAAAAAAAAAAQAAAAABAAAAQ=</HashCode>
       <FileName>Rules\UpdateRule.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -39,6 +29,13 @@
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>BackstagePassRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GildedRoseKata.Refactored.GildedRose">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>GildedRose.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
