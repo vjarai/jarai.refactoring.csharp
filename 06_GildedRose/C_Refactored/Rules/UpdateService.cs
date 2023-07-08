@@ -20,8 +20,9 @@ namespace GildedRoseKata.Refactored.Rules
             _rules = new Dictionary<string, UpdateRule>()
             {
                 { AgedBrie, new UpdateRule(){QualityChangePerDay = 1} },
-                { SulfurasHandOfRagnaros, new UpdateRule{QualityChangePerDay = 0, MinQuality = 80, MaxQuality = 80} }
-            };
+                { SulfurasHandOfRagnaros, new UpdateRule{QualityChangePerDay = 0, SellInChangePerDay = 0, MinQuality = 80, MaxQuality = 80} },
+                { BackstagePassesToATafkal80EtcConcert, new BackstagePassRule() },
+           };
         }
 
         public void UpdateItem(Item itemToUpdate)

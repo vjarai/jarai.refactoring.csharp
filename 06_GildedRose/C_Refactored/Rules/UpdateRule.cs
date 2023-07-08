@@ -8,9 +8,11 @@
 
         public int QualityChangePerDay { get; set; } = -1;
 
+        public int SellInChangePerDay { get; set; } = -1;
+
         public virtual void Update(Item itemToUpdate)
         {
-            itemToUpdate.SellIn -= 1;
+            itemToUpdate.SellIn += SellInChangePerDay;
 
             UpdateQuality(itemToUpdate, QualityChangePerDay);
 

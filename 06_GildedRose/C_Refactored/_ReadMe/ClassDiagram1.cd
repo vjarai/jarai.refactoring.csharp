@@ -27,18 +27,18 @@
       <Field Name="_rules" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Class Name="GildedRoseKata.Refactored.Rules.DefaultRule">
-    <Position X="7" Y="3.25" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Rules\DefaultRule.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="GildedRoseKata.Refactored.Rules.UpdateRule">
-    <Position X="7.5" Y="0.5" Width="1.5" />
+    <Position X="7.5" Y="0.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAEAAAAAAAAAAAAAQAAAAABAAAAQ=</HashCode>
       <FileName>Rules\UpdateRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GildedRoseKata.Refactored.BackstagePassRule">
+    <Position X="6.25" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BackstagePassRule.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
