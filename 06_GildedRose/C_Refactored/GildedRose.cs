@@ -8,6 +8,7 @@ public class GildedRose
     private const string AgedBrie = "Aged Brie";
     private const string BackstagePassesToATafkal80EtcConcert = "Backstage passes to a TAFKAL80ETC concert";
     private const string SulfurasHandOfRagnaros = "Sulfuras, Hand of Ragnaros";
+    private const string Cunjured = "Conjured";
 
     private readonly UpdateRule _defaultRule = new();
 
@@ -32,6 +33,10 @@ public class GildedRose
             {
                 BackstagePassesToATafkal80EtcConcert,
                 new BackstagePassRule()
+            },
+            {
+                Cunjured,
+                new ConjuredRule()
             }
         };
     }
@@ -48,6 +53,6 @@ public class GildedRose
         if (!_specialRules.TryGetValue(itemToUpdate.Name, out var rule))
             rule = _defaultRule;
 
-        rule.Update(itemToUpdate);
+        rule.UpdateItem(itemToUpdate);
     }
 }

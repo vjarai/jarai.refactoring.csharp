@@ -2,7 +2,7 @@
 
 public class BackstagePassRule : UpdateRule
 {
-    public override void Update(Item item)
+    public override void UpdateItem(Item item)
     {
         item.Quality += 1;
 

@@ -10,14 +10,14 @@ public class UpdateRule
 
     public int SellInChangePerDay { get; set; } = -1;
 
-    public virtual void Update(Item itemToUpdate)
+    public virtual void UpdateItem(Item itemToUpdate)
     {
         itemToUpdate.SellIn += SellInChangePerDay;
 
         UpdateQuality(itemToUpdate, QualityChangePerDay);
     }
 
-    protected void UpdateQuality(Item item, int qualityChange)
+    protected virtual void UpdateQuality(Item item, int qualityChange)
     {
         if (item.SellIn < 0)
             qualityChange *= 2;
