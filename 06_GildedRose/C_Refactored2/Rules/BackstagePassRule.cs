@@ -1,4 +1,4 @@
-﻿namespace GildedRoseKata.Refactored.Rules;
+﻿namespace GildedRoseKata.Refactored2.Rules;
 
 public class BackstagePassRule : ItemUpdateRule
 {

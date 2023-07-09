@@ -1,6 +1,6 @@
-﻿namespace GildedRoseKata.Refactored.Rules;
+﻿namespace GildedRoseKata.Refactored2.Rules;
 
-class ConjuredRule : ItemUpdateRule
+internal class ConjuredRule : ItemUpdateRule
 {
     protected override void UpdateQuality(Item item, int qualityChange)
     {

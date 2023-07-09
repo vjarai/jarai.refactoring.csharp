@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GildedRoseKata.Refactored2.Item">
+    <Position X="3.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAQAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GildedRoseKata.Refactored2.Rules.ItemUpdateRule">
+    <Position X="6.75" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIQAAAAAAAAAAAAEAAAAAAAAAAAAAQAAAAABAAAAQ=</HashCode>
+      <FileName>Rules\ItemUpdateRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GildedRoseKata.Refactored2.GildedRose">
+    <Position X="0.5" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAIACAAAAAAQ=</HashCode>
+      <FileName>GildedRose.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_factory" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="Items" />
+      <Field Name="_decoratedItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="GildedRoseKata.Refactored2.Rules.BackstagePassRule">
+    <Position X="6" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rules\BackstagePassRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GildedRoseKata.Refactored2.Rules.ConjuredRule">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Rules\ConjuredRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GildedRoseKata.Refactored2.DecoratedItem">
+    <Position X="3.75" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAABAAAgAAAQAAIAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>DecoratedItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_innerItem" />
+      <Field Name="_updateRule" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GildedRoseKata.Refactored2.DecoratedItemFactory">
+    <Position X="3.5" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BAAAgAAAAAIAAAAAAAhAAAAAACAAAAAACAAEAAAAAAA=</HashCode>
+      <FileName>DecoratedItemFactory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_defaultRule" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_specialRules" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

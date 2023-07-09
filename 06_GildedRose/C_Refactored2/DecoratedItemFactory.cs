@@ -1,25 +1,19 @@
 ﻿using System.Collections.Generic;
-using GildedRoseKata.Refactored.Rules;
+using GildedRoseKata.Refactored2.Rules;
 
-namespace GildedRoseKata.Refactored;
+namespace GildedRoseKata.Refactored2;
 
-public class GildedRose
+public class DecoratedItemFactory
 {
     private const string AgedBrie = "Aged Brie";
     private const string BackstagePassesToATafkal80EtcConcert = "Backstage passes to a TAFKAL80ETC concert";
     private const string SulfurasHandOfRagnaros = "Sulfuras, Hand of Ragnaros";
     private const string Cunjured = "Conjured";
-
     private readonly ItemUpdateRule _defaultRule = new();
-
-    private IList<Item> Items;
-
     private readonly Dictionary<string, ItemUpdateRule> _specialRules;
 
-    public GildedRose(IList<Item> items)
+    public DecoratedItemFactory()
     {
-        Items = items;
-
         _specialRules = new Dictionary<string, ItemUpdateRule>
         {
             {
@@ -28,7 +22,8 @@ public class GildedRose
             },
             {
                 SulfurasHandOfRagnaros,
-                new ItemUpdateRule { QualityChangePerDay = 0, SellInChangePerDay = 0, MinQuality = 80, MaxQuality = 80 }
+                new ItemUpdateRule
+                    { QualityChangePerDay = 0, SellInChangePerDay = 0, MinQuality = 80, MaxQuality = 80 }
             },
             {
                 BackstagePassesToATafkal80EtcConcert,
@@ -41,18 +36,17 @@ public class GildedRose
         };
     }
 
-    public void UpdateQuality()
+    private DecoratedItem CreateDecoratedItem(Item item)
     {
-        foreach (var item in Items)
-            UpdateItem(item);
-    }
-
-
-    private void UpdateItem(Item itemToUpdate)
-    {
-        if (!_specialRules.TryGetValue(itemToUpdate.Name, out var rule))
+        if (!_specialRules.TryGetValue(item.Name, out var rule))
             rule = _defaultRule;
 
-        rule.UpdateItem(itemToUpdate);
+        return new DecoratedItem(item, rule);
+    }
+
+    public IEnumerable<DecoratedItem> CreateDecoratedItems(IEnumerable<Item> items)
+    {
+        foreach (var item in items)
+            yield return CreateDecoratedItem(item);
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace GildedRoseKata.Refactored.Rules;
 
-public class UpdateRule
+public class ItemUpdateRule
 {
     public int MaxQuality { get; set; } = 50;
 

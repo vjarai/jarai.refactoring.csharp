@@ -7,24 +7,24 @@
       <FileName>Item.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GildedRoseKata.Refactored.Rules.UpdateRule">
+  <Class Name="GildedRoseKata.Refactored.Rules.ItemUpdateRule">
     <Position X="6.75" Y="0.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAIQAAAAAAAAAAAAEAAAAAAAAAAAAAQAAAAABAAAAQ=</HashCode>
-      <FileName>Rules\UpdateRule.cs</FileName>
+      <FileName>Rules\ItemUpdateRule.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GildedRoseKata.Refactored.GildedRose">
     <Position X="3.25" Y="0.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>BAAAwAAAAAIAAAAAAAAAAAAAADAAAAAACAAEAAAAAAQ=</HashCode>
+      <HashCode>BAAAwAAAAAIACAAAAAAAAAAAACAAAAAACAAEAAAAAAQ=</HashCode>
       <FileName>GildedRose.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Field Name="_defaultRule" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
-      <Field Name="_items" />
+      <Field Name="Items" />
       <Field Name="_specialRules" />
     </ShowAsCollectionAssociation>
   </Class>
