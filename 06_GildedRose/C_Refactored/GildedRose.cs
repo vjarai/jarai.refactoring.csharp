@@ -12,13 +12,13 @@ public class GildedRose
 
     private readonly UpdateRule _defaultRule = new();
 
-    private readonly IList<Item> _items;
+    private IList<Item> Items;
 
     private readonly Dictionary<string, UpdateRule> _specialRules;
 
     public GildedRose(IList<Item> items)
     {
-        _items = items;
+        Items = items;
 
         _specialRules = new Dictionary<string, UpdateRule>
         {
@@ -43,12 +43,12 @@ public class GildedRose
 
     public void UpdateQuality()
     {
-        foreach (var item in _items) 
+        foreach (var item in Items)
             UpdateItem(item);
     }
 
 
-    public void UpdateItem(Item itemToUpdate)
+    private void UpdateItem(Item itemToUpdate)
     {
         if (!_specialRules.TryGetValue(itemToUpdate.Name, out var rule))
             rule = _defaultRule;
