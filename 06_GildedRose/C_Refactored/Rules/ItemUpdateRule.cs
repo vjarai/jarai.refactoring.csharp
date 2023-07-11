@@ -1,4 +1,6 @@
-﻿namespace GildedRoseKata.Refactored.Rules;
+﻿using System;
+
+namespace GildedRoseKata.Refactored.Rules;
 
 public class ItemUpdateRule
 {
@@ -24,8 +26,7 @@ public class ItemUpdateRule
 
         item.Quality += qualityChange;
 
-        if (item.Quality < MinQuality) item.Quality = MinQuality;
-
-        if (item.Quality > MaxQuality) item.Quality = MaxQuality;
+        item.Quality = Math.Max(item.Quality, MinQuality);
+        item.Quality = Math.Min(item.Quality, MaxQuality);
     }
 }
