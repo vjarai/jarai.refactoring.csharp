@@ -2,7 +2,7 @@
 
 namespace Jarai.Refactoring.Kniffel.Original.Tests
 {
-    public class YatzyTest
+    public class KniffelTests
     {
         [Fact]
         public void Chance_scores_sum_of_all_dice()
