@@ -50,6 +50,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="_ReadMe\ClassDiagram1.cd" />
+    <None Include="_ReadMe\Kniffel_Regeln.pdf" />
+    <None Include="_ReadMe\Kniffel_Vorlage.pdf" />
+    <None Include="_ReadMe\ReadMe.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
