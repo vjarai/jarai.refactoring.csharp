@@ -8,50 +8,42 @@ namespace Jarai.Refactoring.Telefon.Refactored
 
         public Telefon()
         {
-            AktuellerZustand = new Aufgelegt();
+            _aktuellerZustand = new Aufgelegt();
         }
 
 
         internal Telefon(Zustand zustand)
         {
-            AktuellerZustand = zustand;
+            _aktuellerZustand = zustand;
         }
 
-        public Zustand AktuellerZustand
-        {
-            get
-            {
-                Debug.WriteLine("\nAktueller Zustand: " + _aktuellerZustand);
-                return _aktuellerZustand;
-            }
-            private set { _aktuellerZustand = value; }
-        }
+        
 
         public void Abheben()
         {
             // Die tatsächlich aufgerufene Methode ist abhängig vom aktuellen Zustand (spätes binden)
-            AktuellerZustand = AktuellerZustand.Abheben();
+            _aktuellerZustand = _aktuellerZustand.Abheben();
         }
 
         public void AnnehmenAnruf()
         {
-            AktuellerZustand = AktuellerZustand.AnnehmenAnruf();
+            _aktuellerZustand = _aktuellerZustand.AnnehmenAnruf();
         }
 
 
         public void Auflegen()
         {
-            AktuellerZustand = AktuellerZustand.Auflegen();
+            _aktuellerZustand = _aktuellerZustand.Auflegen();
         }
 
         public void Sprechen()
         {
-            AktuellerZustand = AktuellerZustand.Sprechen();
+            _aktuellerZustand = _aktuellerZustand.Sprechen();
         }
 
         public void Wählen()
         {
-            AktuellerZustand = AktuellerZustand.Wählen();
+            _aktuellerZustand = _aktuellerZustand.Wählen();
         }
     }
 }
