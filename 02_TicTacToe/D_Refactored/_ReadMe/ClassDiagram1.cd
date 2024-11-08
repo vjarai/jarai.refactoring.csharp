@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Jarai.Refactoring.TicTacToe.Step3.UserInterface.ConsoleUserInterface">
-    <Position X="7.5" Y="0.5" Width="2" />
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Jarai.Refactoring.TicTacToe.Refactored.UserInterface.ConsoleUserInterface">
+    <Position X="9" Y="0.5" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAiAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>UserInterface\ConsoleUserInterface.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Jarai.Refactoring.TicTacToe.Step3.Logic.TicTacToeGame">
-    <Position X="2" Y="2" Width="1.5" />
+  <Class Name="Jarai.Refactoring.TicTacToe.Refactored.Logic.TicTacToeGame">
+    <Position X="0.5" Y="1.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAEACEAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>Logic\TicTacToeGame.cs</FileName>
@@ -20,8 +20,8 @@
       <Field Name="_currentPlayer" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="Jarai.Refactoring.TicTacToe.Step3.Logic.TicTacToeBoard">
-    <Position X="4" Y="4.25" Width="2.25" />
+  <Class Name="Jarai.Refactoring.TicTacToe.Refactored.Logic.TicTacToeBoard">
+    <Position X="4.75" Y="3.75" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAIAgAAAAABAAAAACACEAAAQAAAAAAAAAEAAAAAAA=</HashCode>
       <FileName>Logic\TicTacToeBoard.cs</FileName>
@@ -30,15 +30,15 @@
       <Field Name="_fields" />
     </ShowAsCollectionAssociation>
   </Class>
-  <Interface Name="Jarai.Refactoring.TicTacToe.Step3.UserInterface.IUserInterface">
-    <Position X="4" Y="0.5" Width="1.5" />
+  <Interface Name="Jarai.Refactoring.TicTacToe.Refactored.UserInterface.IUserInterface">
+    <Position X="4.75" Y="1" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAiAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>UserInterface\IUserInterface.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Enum Name="Jarai.Refactoring.TicTacToe.Step3.Logic.Player">
-    <Position X="7.5" Y="2.5" Width="1.5" />
+  <Enum Name="Jarai.Refactoring.TicTacToe.Refactored.Logic.Player">
+    <Position X="9.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAQAA=</HashCode>
       <FileName>Logic\Player.cs</FileName>
