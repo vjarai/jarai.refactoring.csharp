@@ -1,6 +1,6 @@
 ﻿namespace Solid.Refactored
 {
-    public class RadioSkill : AlexaSkill, IAlexaSkill
+    public class RadioSkill : AlexaSkill
     {
         public override bool CanHandleRequest(string request)
         {

@@ -1,6 +1,6 @@
 ﻿namespace Solid.Refactored
 {
-    public class WettervorhersageSkill : AlexaSkill, IAlexaSkill
+    public class WettervorhersageSkill : AlexaSkill
     {
         public override bool CanHandleRequest(string request)
         {
