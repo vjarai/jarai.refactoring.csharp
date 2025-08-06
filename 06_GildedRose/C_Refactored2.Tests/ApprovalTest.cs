@@ -8,7 +8,7 @@ using Xunit;
 
 namespace GildedRoseKata.Refactored.Tests;
 
-[UsesVerify]
+//[UsesVerify]
 public class ApprovalTest
 {
     [Fact]

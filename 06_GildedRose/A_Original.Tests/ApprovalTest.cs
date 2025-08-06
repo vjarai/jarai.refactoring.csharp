@@ -13,7 +13,7 @@ using Xunit;
 
 namespace GildedRoseTests
 {
-    [UsesVerify]
+    //[UsesVerifyAttribute]
     public class ApprovalTest
     {
         [Fact]
