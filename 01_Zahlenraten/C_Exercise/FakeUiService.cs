@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Reflection;
 
-namespace Jarai.Refactoring.Zahlenraten.Exercise
+namespace EntwickeltVonMaxMustermann
 {
     public class FakeUiService : UiService
     {

@@ -10,7 +10,7 @@ namespace EntwickeltVonMaxMustermann
     {
         static void Main(string[] args)
         {
-            //Der Computer denkt sich ein zufällige Zahl im Bereich 1 bis 100 aus: int geheimzahl = new Random().Next(1, 101);
+            //Der Computer denkt sich eine zufällige Zahl im Bereich 1 bis 100 aus: int geheimzahl = new Random().Next(1, 101);
             int z = new Random().Next(1, 101);
             Console.WriteLine("Errate eine Zahl zwischen 1 und 100");
             //Nachdem der Anwender einen Tipp eingegeben hat, antwortet der Computer, ob der Tipp "Zu klein.", "Zu groß." oder "Richtig!" war.
