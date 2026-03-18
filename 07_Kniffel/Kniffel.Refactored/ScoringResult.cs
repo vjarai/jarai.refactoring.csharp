@@ -2,14 +2,14 @@ namespace Kniffel.Refactored;
 
 public class ScoringResult
 {
-    public ScoringResult(ScoreId scoreId, int score, string? ruleName = null)
+    public ScoringResult(RuleId ruleId, int score, string? ruleName = null)
     {
-        ScoreId = scoreId;
-        RuleName = ruleName ?? scoreId.ToString();
+        RuleId = ruleId;
+        RuleName = ruleName ?? ruleId.ToString();
         Score = score;
     }
 
-    public ScoreId ScoreId { get; }
+    public RuleId RuleId { get; }
     public string RuleName { get; }
     public int Score { get; }
 
@@ -24,7 +24,7 @@ public class ScoringResult
 
     protected bool Equals(ScoringResult other)
     {
-        return ScoreId == other.ScoreId && Score == other.Score;
+        return RuleId == other.RuleId && Score == other.Score;
     }
 
     public override int GetHashCode()

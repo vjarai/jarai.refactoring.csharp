@@ -1,6 +1,6 @@
 namespace Kniffel.Refactored;
 
-public enum ScoreId
+public enum RuleId
 {
     //Count,
     ThreeOfAKind,

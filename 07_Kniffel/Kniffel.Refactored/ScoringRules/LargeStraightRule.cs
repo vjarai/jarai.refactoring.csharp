@@ -2,7 +2,7 @@ namespace Kniffel.Refactored.ScoringRules;
 
 public class LargeStraightRule : ScoringRule
 {
-    public LargeStraightRule() : base(ScoreId.LargeStraight, "Grosse Strasse")
+    public LargeStraightRule() : base(RuleId.LargeStraight, "Grosse Strasse")
     {
     }
 

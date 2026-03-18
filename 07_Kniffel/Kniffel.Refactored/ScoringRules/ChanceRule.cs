@@ -2,7 +2,7 @@ namespace Kniffel.Refactored.ScoringRules;
 
 internal class ChanceRule : ScoringRule
 {
-    public ChanceRule() : base(ScoreId.Chance, "Chance")
+    public ChanceRule() : base(RuleId.Chance, "Chance")
     {
     }
 

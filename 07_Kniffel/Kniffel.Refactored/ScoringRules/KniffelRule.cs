@@ -2,7 +2,7 @@ namespace Kniffel.Refactored.ScoringRules;
 
 public class KniffelRule : ScoringRule
 {
-    public KniffelRule() : base(ScoreId.Kniffel, "Kniffel")
+    public KniffelRule() : base(RuleId.Kniffel, "Kniffel")
     {
     }
 

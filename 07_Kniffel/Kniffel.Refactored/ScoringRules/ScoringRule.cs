@@ -7,18 +7,18 @@ public abstract class ScoringRule
     /// </summary>
     public ScoringRule()
     {
-        Name = string.Empty;
+        RuleName = string.Empty;
     }
 
-    protected ScoringRule(ScoreId scoreId, string name)
+    protected ScoringRule(RuleId ruleId, string ruleName)
     {
-        Name = name;
-        ScoreId = scoreId;
+        RuleName = ruleName;
+        RuleId = ruleId;
     }
 
-    public string Name { get; private set; }
+    public string RuleName { get; private set; }
 
-    public ScoreId ScoreId { get; private set; }
+    public RuleId RuleId { get; private set; }
 
 
     public abstract int CalculateScore(Wurf wurf);

@@ -2,22 +2,22 @@ using Xunit;
 
 namespace Kniffel.Refactored.Tests;
 
-public class KniffelScoringServiceTests
+public class ScoringServiceTests
 {
-    private readonly KniffelScoringService _sut = new();
+    private readonly ScoringService _sut = new();
 
     [Theory]
-    [InlineData(ScoreId.Ones, 1, 2, 3, 4, 5, 1)]
-    [InlineData(ScoreId.Twos, 1, 2, 2, 4, 5, 4)]
-    [InlineData(ScoreId.Threes, 3, 3, 1, 5, 6, 6)]
-    [InlineData(ScoreId.Fours, 4, 4, 4, 1, 2, 12)]
-    [InlineData(ScoreId.Fives, 5, 1, 5, 2, 5, 15)]
-    [InlineData(ScoreId.Sixes, 6, 6, 6, 2, 1, 18)]
-    public void Count_rules_return_sum_of_matching_dice(ScoreId scoreId, int d1, int d2, int d3, int d4, int d5, int expected)
+    [InlineData(RuleId.Ones, 1, 2, 3, 4, 5, 1)]
+    [InlineData(RuleId.Twos, 1, 2, 2, 4, 5, 4)]
+    [InlineData(RuleId.Threes, 3, 3, 1, 5, 6, 6)]
+    [InlineData(RuleId.Fours, 4, 4, 4, 1, 2, 12)]
+    [InlineData(RuleId.Fives, 5, 1, 5, 2, 5, 15)]
+    [InlineData(RuleId.Sixes, 6, 6, 6, 2, 1, 18)]
+    public void Count_rules_return_sum_of_matching_dice(RuleId ruleId, int d1, int d2, int d3, int d4, int d5, int expected)
     {
         var wurf = new Wurf(d1, d2, d3, d4, d5);
 
-        var actual = _sut.CalculateScore(scoreId, wurf);
+        var actual = _sut.CalculateScore(ruleId, wurf);
 
         Assert.Equal(expected, actual);
     }
@@ -25,7 +25,7 @@ public class KniffelScoringServiceTests
     [Fact]
     public void Three_of_a_kind_returns_sum_when_present()
     {
-        var actual = _sut.CalculateScore(ScoreId.ThreeOfAKind, new Wurf(3, 3, 3, 4, 5));
+        var actual = _sut.CalculateScore(RuleId.ThreeOfAKind, new Wurf(3, 3, 3, 4, 5));
 
         Assert.Equal(18, actual);
     }
@@ -33,7 +33,7 @@ public class KniffelScoringServiceTests
     [Fact]
     public void Three_of_a_kind_returns_zero_when_not_present()
     {
-        var actual = _sut.CalculateScore(ScoreId.ThreeOfAKind, new Wurf(1, 2, 3, 4, 5));
+        var actual = _sut.CalculateScore(RuleId.ThreeOfAKind, new Wurf(1, 2, 3, 4, 5));
 
         Assert.Equal(0, actual);
     }
@@ -41,7 +41,7 @@ public class KniffelScoringServiceTests
     [Fact]
     public void Four_of_a_kind_returns_sum_when_present()
     {
-        var actual = _sut.CalculateScore(ScoreId.FourOfAKind, new Wurf(2, 2, 2, 2, 5));
+        var actual = _sut.CalculateScore(RuleId.FourOfAKind, new Wurf(2, 2, 2, 2, 5));
 
         Assert.Equal(13, actual);
     }
@@ -49,7 +49,7 @@ public class KniffelScoringServiceTests
     [Fact]
     public void Four_of_a_kind_returns_zero_when_not_present()
     {
-        var actual = _sut.CalculateScore(ScoreId.FourOfAKind, new Wurf(2, 2, 2, 3, 5));
+        var actual = _sut.CalculateScore(RuleId.FourOfAKind, new Wurf(2, 2, 2, 3, 5));
 
         Assert.Equal(0, actual);
     }
@@ -57,7 +57,7 @@ public class KniffelScoringServiceTests
     [Fact]
     public void Full_house_returns_25_for_three_and_two_equal_dice()
     {
-        var actual = _sut.CalculateScore(ScoreId.FullHouse, new Wurf(2, 2, 3, 3, 3));
+        var actual = _sut.CalculateScore(RuleId.FullHouse, new Wurf(2, 2, 3, 3, 3));
 
         Assert.Equal(25, actual);
     }
@@ -65,7 +65,7 @@ public class KniffelScoringServiceTests
     [Fact]
     public void Full_house_returns_zero_when_pattern_is_missing()
     {
-        var actual = _sut.CalculateScore(ScoreId.FullHouse, new Wurf(2, 2, 2, 2, 5));
+        var actual = _sut.CalculateScore(RuleId.FullHouse, new Wurf(2, 2, 2, 2, 5));
 
         Assert.Equal(0, actual);
     }
@@ -73,7 +73,7 @@ public class KniffelScoringServiceTests
     [Fact]
     public void Small_straight_returns_30_for_four_in_a_row()
     {
-        var actual = _sut.CalculateScore(ScoreId.SmallStraight, new Wurf(1, 2, 3, 4, 6));
+        var actual = _sut.CalculateScore(RuleId.SmallStraight, new Wurf(1, 2, 3, 4, 6));
 
         Assert.Equal(30, actual);
     }
@@ -81,7 +81,7 @@ public class KniffelScoringServiceTests
     [Fact]
     public void Small_straight_returns_zero_when_no_sequence_exists()
     {
-        var actual = _sut.CalculateScore(ScoreId.SmallStraight, new Wurf(1, 1, 3, 5, 6));
+        var actual = _sut.CalculateScore(RuleId.SmallStraight, new Wurf(1, 1, 3, 5, 6));
 
         Assert.Equal(0, actual);
     }
@@ -91,7 +91,7 @@ public class KniffelScoringServiceTests
     [InlineData(2, 3, 4, 5, 6)]
     public void Large_straight_returns_40_for_five_in_a_row(int d1, int d2, int d3, int d4, int d5)
     {
-        var actual = _sut.CalculateScore(ScoreId.LargeStraight, new Wurf(d1, d2, d3, d4, d5));
+        var actual = _sut.CalculateScore(RuleId.LargeStraight, new Wurf(d1, d2, d3, d4, d5));
 
         Assert.Equal(40, actual);
     }
@@ -99,7 +99,7 @@ public class KniffelScoringServiceTests
     [Fact]
     public void Large_straight_returns_zero_for_duplicates()
     {
-        var actual = _sut.CalculateScore(ScoreId.LargeStraight, new Wurf(1, 2, 2, 4, 5));
+        var actual = _sut.CalculateScore(RuleId.LargeStraight, new Wurf(1, 2, 2, 4, 5));
 
         Assert.Equal(0, actual);
     }
@@ -107,7 +107,7 @@ public class KniffelScoringServiceTests
     [Fact]
     public void Kniffel_returns_50_for_five_equal_dice()
     {
-        var actual = _sut.CalculateScore(ScoreId.Kniffel, new Wurf(6, 6, 6, 6, 6));
+        var actual = _sut.CalculateScore(RuleId.Kniffel, new Wurf(6, 6, 6, 6, 6));
 
         Assert.Equal(50, actual);
     }
@@ -115,7 +115,7 @@ public class KniffelScoringServiceTests
     [Fact]
     public void Kniffel_returns_zero_when_not_all_dice_equal()
     {
-        var actual = _sut.CalculateScore(ScoreId.Kniffel, new Wurf(6, 6, 6, 6, 5));
+        var actual = _sut.CalculateScore(RuleId.Kniffel, new Wurf(6, 6, 6, 6, 5));
 
         Assert.Equal(0, actual);
     }
@@ -123,7 +123,7 @@ public class KniffelScoringServiceTests
     [Fact]
     public void Chance_returns_sum_of_all_dice()
     {
-        var actual = _sut.CalculateScore(ScoreId.Chance, new Wurf(2, 3, 4, 5, 1));
+        var actual = _sut.CalculateScore(RuleId.Chance, new Wurf(2, 3, 4, 5, 1));
 
         Assert.Equal(15, actual);
     }

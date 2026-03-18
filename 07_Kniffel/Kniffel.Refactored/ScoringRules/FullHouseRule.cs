@@ -2,7 +2,7 @@ namespace Kniffel.Refactored.ScoringRules;
 
 public class FullHouseRule : ScoringRule
 {
-    public FullHouseRule() : base(ScoreId.FullHouse, "Full House")
+    public FullHouseRule() : base(RuleId.FullHouse, "Full House")
     {
     }
 

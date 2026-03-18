@@ -2,27 +2,27 @@ using Kniffel.Refactored.ScoringRules;
 
 namespace Kniffel.Refactored;
 
-public class KniffelScoringService
+public class ScoringService
 {
     private readonly IEnumerable<ScoringRule> _rules;
 
     /// <summary>
     ///     Constructor enables injection of Depencies
     /// </summary>
-    public KniffelScoringService(IEnumerable<ScoringRule> rules)
+    public ScoringService(IEnumerable<ScoringRule> rules)
     {
         _rules = rules;
     }
 
 
-    public KniffelScoringService()
+    public ScoringService()
     {
         _rules = CreateDefaultRules();
     }
 
-    public int CalculateScore(ScoreId scoreId, Wurf wurf)
+    public int CalculateScore(RuleId ruleId, Wurf wurf)
     {
-        var rule = _rules.Single(r => r.ScoreId == scoreId);
+        var rule = _rules.Single(r => r.RuleId == ruleId);
 
         return rule.CalculateScore(wurf);
     }
@@ -33,7 +33,7 @@ public class KniffelScoringService
             let result = rule.CalculateScore(wurf)
             where result > 0
             orderby result descending
-            select new ScoringResult(rule.ScoreId, result, rule.Name);
+            select new ScoringResult(rule.RuleId, result, rule.RuleName);
     }
 
 
@@ -41,12 +41,12 @@ public class KniffelScoringService
     {
         return new List<ScoringRule>
         {
-            new CountRule(1, ScoreId.Ones, "Einer"),
-            new CountRule(2, ScoreId.Twos, "Zweier"),
-            new CountRule(3, ScoreId.Threes, "Dreier"),
-            new CountRule(4, ScoreId.Fours, "Vierer"),
-            new CountRule(5, ScoreId.Fives, "Fünfer"),
-            new CountRule(6, ScoreId.Sixes, "Sechser"),
+            new CountRule(1, RuleId.Ones, "Einer"),
+            new CountRule(2, RuleId.Twos, "Zweier"),
+            new CountRule(3, RuleId.Threes, "Dreier"),
+            new CountRule(4, RuleId.Fours, "Vierer"),
+            new CountRule(5, RuleId.Fives, "Fünfer"),
+            new CountRule(6, RuleId.Sixes, "Sechser"),
 
             new ThreeOfAKindRule(),
             new FourOfAKindRule(),

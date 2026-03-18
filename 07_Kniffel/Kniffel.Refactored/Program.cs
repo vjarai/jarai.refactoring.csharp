@@ -20,7 +20,7 @@ internal class Program
         //var wurf = new Wurf(3, 3, 3, 3, 3);
         //var wurf = new Wurf(4, 3, 2, 5,  1 );
 
-        // TODO: Create KniffelScoringService with all rules via IoC Container
+        // TODO: Create ScoringService with all rules via IoC Container
         var scoringService = CreateKniffelScoringService();
 
         do
@@ -39,16 +39,16 @@ internal class Program
         } while (Console.ReadLine().ToUpper() != "N");
     }
 
-    private static KniffelScoringService CreateKniffelScoringService()
+    private static ScoringService CreateKniffelScoringService()
     {
         var rules = new List<ScoringRule>
         {
-            new CountRule(1, ScoreId.Ones, "Einer"),
-            new CountRule(2, ScoreId.Twos, "Zweier"),
-            new CountRule(3, ScoreId.Threes, "Dreier"),
-            new CountRule(4, ScoreId.Fours, "Vierer"),
-            new CountRule(5, ScoreId.Fives, "Fünfer"),
-            new CountRule(6, ScoreId.Sixes, "Sechser"),
+            new CountRule(1, RuleId.Ones, "Einer"),
+            new CountRule(2, RuleId.Twos, "Zweier"),
+            new CountRule(3, RuleId.Threes, "Dreier"),
+            new CountRule(4, RuleId.Fours, "Vierer"),
+            new CountRule(5, RuleId.Fives, "Fünfer"),
+            new CountRule(6, RuleId.Sixes, "Sechser"),
 
             new ThreeOfAKindRule(),
             new FourOfAKindRule(),
@@ -59,6 +59,6 @@ internal class Program
             new ChanceRule()
         };
 
-        return new KniffelScoringService(rules);
+        return new ScoringService(rules);
     }
 }

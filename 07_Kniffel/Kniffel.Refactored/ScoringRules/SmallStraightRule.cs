@@ -2,7 +2,7 @@ namespace Kniffel.Refactored.ScoringRules;
 
 public class SmallStraightRule : ScoringRule
 {
-    public SmallStraightRule() : base(ScoreId.SmallStraight, "Kleine Strasse")
+    public SmallStraightRule() : base(RuleId.SmallStraight, "Kleine Strasse")
     {
     }
 

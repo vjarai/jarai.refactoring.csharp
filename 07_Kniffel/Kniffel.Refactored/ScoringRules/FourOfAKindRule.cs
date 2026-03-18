@@ -2,7 +2,7 @@ namespace Kniffel.Refactored.ScoringRules;
 
 public class FourOfAKindRule : ScoringRule
 {
-    public FourOfAKindRule() : base(ScoreId.FourOfAKind, "Vierer Pasch")
+    public FourOfAKindRule() : base(RuleId.FourOfAKind, "Vierer Pasch")
     {
     }
 
