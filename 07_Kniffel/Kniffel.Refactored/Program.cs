@@ -2,13 +2,12 @@
 
 namespace Kniffel.Refactored;
 
-// Viktor@Jarai.de1
 
 internal class Program
 {
     private static void Main(string[] args)
     {
-        // => Kniffel_Regeln sind im im _ReadMe Ordner dieses Projects
+        // => Kniffel_Regeln sind im _ReadMe Ordner dieses Projects
 
         // Dora hat drei Fünfen und zwei Dreien gewürfelt.
         // Sie hat nun vier Möglichkeiten:

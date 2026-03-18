@@ -16,6 +16,6 @@ public class CountRule : ScoringRule
 
     public override bool CanCalculateScore(Wurf wurf)
     {
-        return wurf.Count(wert => wert == _zielWert) >= 1;
+        return wurf.Any(wert => wert == _zielWert);
     }
 }
