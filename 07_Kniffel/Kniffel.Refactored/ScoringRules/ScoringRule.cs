@@ -21,7 +21,7 @@ public abstract class ScoringRule
     public RuleId RuleId { get; private set; }
 
 
-    public abstract int CalculateScore(Wurf wurf);
+    public abstract ScoringResult CalculateScore(Wurf wurf);
 
     public abstract bool CanCalculateScore(Wurf wurf);
 }

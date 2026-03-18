@@ -20,7 +20,7 @@ public class ScoringService
         _rules = CreateDefaultRules();
     }
 
-    public int CalculateScore(RuleId ruleId, Wurf wurf)
+    public ScoringResult CalculateScore(RuleId ruleId, Wurf wurf)
     {
         var rule = _rules.Single(r => r.RuleId == ruleId);
 
@@ -30,10 +30,10 @@ public class ScoringService
     public IEnumerable<ScoringResult> CalculateScorings(Wurf wurf)
     {
         return from rule in _rules
-            let result = rule.CalculateScore(wurf)
-            where result > 0
-            orderby result descending
-            select new ScoringResult(rule.RuleId, result, rule.RuleName);
+               let result = rule.CalculateScore(wurf)
+               where result.Score > 0
+               orderby result.Score descending
+               select new ScoringResult(result.Score, rule.RuleId, rule.RuleName);
     }
 
 

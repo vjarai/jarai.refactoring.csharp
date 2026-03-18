@@ -2,7 +2,7 @@ namespace Kniffel.Refactored;
 
 public class ScoringResult
 {
-    public ScoringResult(RuleId ruleId, int score, string? ruleName = null)
+    public ScoringResult(int score, RuleId ruleId = default, string? ruleName = null)
     {
         RuleId = ruleId;
         RuleName = ruleName ?? ruleId.ToString();

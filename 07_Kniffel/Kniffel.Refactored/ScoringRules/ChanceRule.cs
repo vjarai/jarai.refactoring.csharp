@@ -6,9 +6,9 @@ internal class ChanceRule : ScoringRule
     {
     }
 
-    public override int CalculateScore(Wurf wurf)
+    public override ScoringResult CalculateScore(Wurf wurf)
     {
-        return wurf.Sum();
+        return new ScoringResult( wurf.Sum());
     }
 
     public override bool CanCalculateScore(Wurf wurf)

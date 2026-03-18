@@ -6,9 +6,9 @@ public class LargeStraightRule : ScoringRule
     {
     }
 
-    public override int CalculateScore(Wurf wurf)
+    public override ScoringResult CalculateScore(Wurf wurf)
     {
-        return CanCalculateScore(wurf) ? 40 : 0;
+        return new ScoringResult(CanCalculateScore(wurf) ? 40 : 0);
     }
 
     public override bool CanCalculateScore(Wurf wurf)

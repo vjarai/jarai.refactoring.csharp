@@ -9,9 +9,9 @@ public class CountRule : ScoringRule
         _zielWert = zielWert;
     }
 
-    public override int CalculateScore(Wurf wurf)
+    public override ScoringResult CalculateScore(Wurf wurf)
     {
-        return wurf.Count(wert => wert == _zielWert) * _zielWert;
+        return new ScoringResult(wurf.Count(wert => wert == _zielWert) * _zielWert);
     }
 
     public override bool CanCalculateScore(Wurf wurf)

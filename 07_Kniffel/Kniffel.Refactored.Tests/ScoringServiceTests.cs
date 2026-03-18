@@ -19,7 +19,7 @@ public class ScoringServiceTests
 
         var actual = _sut.CalculateScore(ruleId, wurf);
 
-        Assert.Equal(expected, actual);
+        Assert.Equal(expected, actual.Score);
     }
 
     [Fact]
@@ -27,7 +27,7 @@ public class ScoringServiceTests
     {
         var actual = _sut.CalculateScore(RuleId.ThreeOfAKind, new Wurf(3, 3, 3, 4, 5));
 
-        Assert.Equal(18, actual);
+        Assert.Equal(18, actual.Score);
     }
 
     [Fact]
@@ -35,7 +35,7 @@ public class ScoringServiceTests
     {
         var actual = _sut.CalculateScore(RuleId.ThreeOfAKind, new Wurf(1, 2, 3, 4, 5));
 
-        Assert.Equal(0, actual);
+        Assert.Equal(0, actual.Score);
     }
 
     [Fact]
@@ -43,7 +43,7 @@ public class ScoringServiceTests
     {
         var actual = _sut.CalculateScore(RuleId.FourOfAKind, new Wurf(2, 2, 2, 2, 5));
 
-        Assert.Equal(13, actual);
+        Assert.Equal(13, actual.Score);
     }
 
     [Fact]
@@ -51,7 +51,7 @@ public class ScoringServiceTests
     {
         var actual = _sut.CalculateScore(RuleId.FourOfAKind, new Wurf(2, 2, 2, 3, 5));
 
-        Assert.Equal(0, actual);
+        Assert.Equal(0, actual.Score);
     }
 
     [Fact]
@@ -59,7 +59,7 @@ public class ScoringServiceTests
     {
         var actual = _sut.CalculateScore(RuleId.FullHouse, new Wurf(2, 2, 3, 3, 3));
 
-        Assert.Equal(25, actual);
+        Assert.Equal(25, actual.Score);
     }
 
     [Fact]
@@ -67,7 +67,7 @@ public class ScoringServiceTests
     {
         var actual = _sut.CalculateScore(RuleId.FullHouse, new Wurf(2, 2, 2, 2, 5));
 
-        Assert.Equal(0, actual);
+        Assert.Equal(0, actual.Score);
     }
 
     [Fact]
@@ -75,7 +75,7 @@ public class ScoringServiceTests
     {
         var actual = _sut.CalculateScore(RuleId.SmallStraight, new Wurf(1, 2, 3, 4, 6));
 
-        Assert.Equal(30, actual);
+        Assert.Equal(30, actual.Score);
     }
 
     [Fact]
@@ -83,7 +83,7 @@ public class ScoringServiceTests
     {
         var actual = _sut.CalculateScore(RuleId.SmallStraight, new Wurf(1, 1, 3, 5, 6));
 
-        Assert.Equal(0, actual);
+        Assert.Equal(0, actual.Score);
     }
 
     [Theory]
@@ -93,7 +93,7 @@ public class ScoringServiceTests
     {
         var actual = _sut.CalculateScore(RuleId.LargeStraight, new Wurf(d1, d2, d3, d4, d5));
 
-        Assert.Equal(40, actual);
+        Assert.Equal(40, actual.Score);
     }
 
     [Fact]
@@ -101,7 +101,7 @@ public class ScoringServiceTests
     {
         var actual = _sut.CalculateScore(RuleId.LargeStraight, new Wurf(1, 2, 2, 4, 5));
 
-        Assert.Equal(0, actual);
+        Assert.Equal(0, actual.Score);
     }
 
     [Fact]
@@ -109,7 +109,7 @@ public class ScoringServiceTests
     {
         var actual = _sut.CalculateScore(RuleId.Kniffel, new Wurf(6, 6, 6, 6, 6));
 
-        Assert.Equal(50, actual);
+        Assert.Equal(50, actual.Score);
     }
 
     [Fact]
@@ -117,7 +117,7 @@ public class ScoringServiceTests
     {
         var actual = _sut.CalculateScore(RuleId.Kniffel, new Wurf(6, 6, 6, 6, 5));
 
-        Assert.Equal(0, actual);
+        Assert.Equal(0, actual.Score);
     }
 
     [Fact]
@@ -125,7 +125,7 @@ public class ScoringServiceTests
     {
         var actual = _sut.CalculateScore(RuleId.Chance, new Wurf(2, 3, 4, 5, 1));
 
-        Assert.Equal(15, actual);
+        Assert.Equal(15, actual.Score);
     }
 }
 

@@ -6,9 +6,9 @@ public class ThreeOfAKindRule : ScoringRule
     {
     }
 
-    public override int CalculateScore(Wurf wurf)
+    public override ScoringResult CalculateScore(Wurf wurf)
     {
-        return CanCalculateScore(wurf) ? wurf.Sum() : 0;
+        return new ScoringResult(CanCalculateScore(wurf) ? wurf.Sum() : 0);
     }
 
     public override bool CanCalculateScore(Wurf wurf)
