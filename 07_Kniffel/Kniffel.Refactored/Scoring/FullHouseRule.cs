@@ -11,10 +11,10 @@ public class FullHouseRule : ScoringRule
 
     public override Score CalculateScore(DiceRoll diceRoll)
     {
-        return new Score(CanCalculateScore(diceRoll) ? 25 : 0);
+        return new Score(IsApplicableTo(diceRoll) ? 25 : 0);
     }
 
-    public override bool CanCalculateScore(DiceRoll diceRoll)
+    public override bool IsApplicableTo(DiceRoll diceRoll)
     {
         int[] counts = diceRoll.GetCounts();
 

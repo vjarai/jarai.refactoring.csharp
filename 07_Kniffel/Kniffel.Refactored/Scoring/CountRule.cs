@@ -17,7 +17,7 @@ public class CountRule : ScoringRule
         return new Score(diceRoll.Count(value => value == _targetValue) * _targetValue);
     }
 
-    public override bool CanCalculateScore(DiceRoll diceRoll)
+    public override bool IsApplicableTo(DiceRoll diceRoll)
     {
         return diceRoll.Any(value => value == _targetValue);
     }

@@ -22,5 +22,5 @@ public abstract class ScoringRule
 
     public abstract Score CalculateScore(DiceRoll diceRoll);
 
-    public abstract bool CanCalculateScore(DiceRoll diceRoll);
+    public abstract bool IsApplicableTo(DiceRoll diceRoll);
 }

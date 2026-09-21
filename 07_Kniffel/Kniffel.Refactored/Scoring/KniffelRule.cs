@@ -11,10 +11,10 @@ public class KniffelRule : ScoringRule
 
     public override Score CalculateScore(DiceRoll diceRoll)
     {
-        return new Score(CanCalculateScore(diceRoll) ? 50 : 0);
+        return new Score(IsApplicableTo(diceRoll) ? 50 : 0);
     }
 
-    public override bool CanCalculateScore(DiceRoll diceRoll)
+    public override bool IsApplicableTo(DiceRoll diceRoll)
     {
         return diceRoll.GetCounts().Any(c => c == 5);
     }

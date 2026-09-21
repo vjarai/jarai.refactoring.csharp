@@ -11,10 +11,10 @@ public class LargeStraightRule : ScoringRule
 
     public override Score CalculateScore(DiceRoll diceRoll)
     {
-        return new Score(CanCalculateScore(diceRoll) ? 40 : 0);
+        return new Score(IsApplicableTo(diceRoll) ? 40 : 0);
     }
 
-    public override bool CanCalculateScore(DiceRoll diceRoll)
+    public override bool IsApplicableTo(DiceRoll diceRoll)
     {
         return diceRoll.GetCounts().Order().Skip(1).All(count => count == 1);
     }

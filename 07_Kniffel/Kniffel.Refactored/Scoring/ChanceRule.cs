@@ -14,7 +14,7 @@ internal class ChanceRule : ScoringRule
         return new Score(diceRoll.Sum());
     }
 
-    public override bool CanCalculateScore(DiceRoll diceRoll)
+    public override bool IsApplicableTo(DiceRoll diceRoll)
     {
         return true;
     }
