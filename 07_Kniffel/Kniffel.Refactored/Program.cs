@@ -14,11 +14,11 @@ internal class Program
         do
         {
             var diceRoll = new DiceRoll();
-            var scorings = scoringService.CalculateScorings(diceRoll);
+            var scores = scoringService.CalculateScores(diceRoll);
 
             Console.WriteLine(diceRoll);
 
-            foreach (var score in scorings)
+            foreach (var score in scores)
             {
                 Console.WriteLine(score);
             }

@@ -14,7 +14,7 @@ public class ScoringServiceTests
     {
         var sut = new ScoringService([new KniffelRule(), new ThreeOfAKindRule(), new ChanceRule()]);
 
-        var scores = sut.CalculateScorings(new DiceRoll(4, 4, 4, 4, 4)).ToList();
+        var scores = sut.CalculateScores(new DiceRoll(4, 4, 4, 4, 4)).ToList();
 
         Assert.Equal(scores.OrderByDescending(s => s.Points), scores);
     }
@@ -24,7 +24,7 @@ public class ScoringServiceTests
     {
         var sut = new ScoringService([new ThreeOfAKindRule()]);
 
-        var scores = sut.CalculateScorings(new DiceRoll(1, 2, 3, 4, 5)).ToList();
+        var scores = sut.CalculateScores(new DiceRoll(1, 2, 3, 4, 5)).ToList();
 
         Assert.Empty(scores);
     }
@@ -36,7 +36,7 @@ public class ScoringServiceTests
     {
         var sut = new ScoringService();
 
-        var scores = sut.CalculateScorings(new DiceRoll(6, 6, 6, 6, 6)).ToList();
+        var scores = sut.CalculateScores(new DiceRoll(6, 6, 6, 6, 6)).ToList();
 
         Assert.Equal(50, scores[0].Points);
     }
@@ -46,7 +46,7 @@ public class ScoringServiceTests
     {
         var sut = new ScoringService([new KniffelRule()]);
 
-        var scores = sut.CalculateScorings(new DiceRoll(1, 2, 3, 4, 5)).ToList();
+        var scores = sut.CalculateScores(new DiceRoll(1, 2, 3, 4, 5)).ToList();
 
         Assert.Empty(scores);
     }

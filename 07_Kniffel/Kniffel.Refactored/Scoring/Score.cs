@@ -13,4 +13,9 @@ public class Score
 
     public string RuleName { get; }
     public int Points { get; }
+
+    public override string ToString()
+    {
+        return $"{RuleName} \t: {Points}";
+    }
 }

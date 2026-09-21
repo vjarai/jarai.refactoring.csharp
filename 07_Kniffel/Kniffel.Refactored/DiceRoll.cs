@@ -7,11 +7,21 @@ namespace Kniffel.Refactored;
 /// </summary>
 public class DiceRoll : IEnumerable<int>
 {
-    private readonly IEnumerable<int> _dice;
+    private readonly int[] _dice;
+
 
     public DiceRoll()
     {
-        _dice = CreateRandom().Order();
+        _dice = new int[5];
+
+        var random = new Random();
+
+        for (var i = 0; i < 5; i++)
+        {
+            _dice[i] = random.Next(1, 7);
+        }
+
+        _dice = _dice.Order().ToArray();
     }
 
     public DiceRoll(params int[] dice)
@@ -19,12 +29,11 @@ public class DiceRoll : IEnumerable<int>
         if (dice.Length != 5)
             throw new ArgumentException("A dice roll must contain exactly 5 numbers.");
 
-        _dice = dice.Order();
     }
 
     public IEnumerator<int> GetEnumerator()
     {
-        return _dice.GetEnumerator();
+        return _dice.AsEnumerable().GetEnumerator();
     }
 
     IEnumerator IEnumerable.GetEnumerator()
@@ -32,15 +41,6 @@ public class DiceRoll : IEnumerable<int>
         return _dice.GetEnumerator();
     }
 
-    private IEnumerable<int> CreateRandom()
-    {
-        var random = new Random();
-
-        for (var i = 0; i < 5; i++)
-        {
-            yield return random.Next(1, 7);
-        }
-    }
 
     /// <summary>
     ///     Returns the counts of each die face.

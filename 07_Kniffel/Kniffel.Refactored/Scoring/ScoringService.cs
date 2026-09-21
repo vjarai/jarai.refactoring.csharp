@@ -8,19 +8,28 @@ public class ScoringService
     private readonly IEnumerable<ScoringRule> _rules;
 
     /// <summary>
-    ///     Constructor enables injection of dependencies.
+    /// Initializes a new instance with injected scoring rules.
     /// </summary>
+    /// <param name="rules">The scoring rules used to calculate available scores.</param>
     public ScoringService(IEnumerable<ScoringRule> rules)
     {
         _rules = rules;
     }
 
+    /// <summary>
+    /// Initializes a new instance and creates scoring rules via reflection.
+    /// </summary>
     public ScoringService()
     {
-        _rules = CreateRulesViaReflection();
+        _rules = DiscoverRules();
     }
 
-    public IEnumerable<Score> CalculateScorings(DiceRoll diceRoll)
+    /// <summary>
+    /// Calculates all available scores for the given dice roll.
+    /// </summary>
+    /// <param name="diceRoll">The dice roll to evaluate.</param>
+    /// <returns>A descending list of scores with points greater than zero.</returns>
+    public IEnumerable<Score> CalculateScores(DiceRoll diceRoll)
     {
         return from rule in _rules
             let result = rule.CalculateScore(diceRoll)
@@ -29,7 +38,11 @@ public class ScoringService
             select new Score(result.Points, rule.RuleName);
     }
 
-    public IEnumerable<ScoringRule> CreateRulesViaReflection()
+    /// <summary>
+    /// Creates scoring rules by combining fixed count rules with reflected rule implementations.
+    /// </summary>
+    /// <returns>The complete collection of scoring rules.</returns>
+    public IEnumerable<ScoringRule> DiscoverRules()
     {
         var rules = new List<ScoringRule>
         {
