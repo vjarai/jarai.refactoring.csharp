@@ -1,19 +1,22 @@
 namespace Kniffel.Refactored.Scoring;
 
+/// <summary>
+/// Scores a fixed value for a small straight.
+/// </summary>
 public class SmallStraightRule : ScoringRule
 {
-    public SmallStraightRule() : base(RuleId.SmallStraight, "Kleine Strasse")
+    public SmallStraightRule() : base("Small Straight")
     {
     }
 
-    public override ScoringResult CalculateScore(Wurf wurf)
+    public override Score CalculateScore(DiceRoll diceRoll)
     {
-        return new ScoringResult(CanCalculateScore(wurf) ? 30 : 0);
+        return new Score(CanCalculateScore(diceRoll) ? 30 : 0);
     }
 
-    public override bool CanCalculateScore(Wurf wurf)
+    public override bool CanCalculateScore(DiceRoll diceRoll)
     {
-        int[] counts = wurf.GetCounts();
+        int[] counts = diceRoll.GetCounts();
 
         // Check for sequences 1-2-3-4, 2-3-4-5, or 3-4-5-6
         return (counts[0] >= 1 && counts[1] >= 1 && counts[2] >= 1 && counts[3] >= 1) ||

@@ -1,19 +1,22 @@
 namespace Kniffel.Refactored.Scoring;
 
+/// <summary>
+/// Scores a fixed value for a full house pattern.
+/// </summary>
 public class FullHouseRule : ScoringRule
 {
-    public FullHouseRule() : base(RuleId.FullHouse, "Full House")
+    public FullHouseRule() : base("Full House")
     {
     }
 
-    public override ScoringResult CalculateScore(Wurf wurf)
+    public override Score CalculateScore(DiceRoll diceRoll)
     {
-        return new ScoringResult(CanCalculateScore(wurf) ? 25 : 0);
+        return new Score(CanCalculateScore(diceRoll) ? 25 : 0);
     }
 
-    public override bool CanCalculateScore(Wurf wurf)
+    public override bool CanCalculateScore(DiceRoll diceRoll)
     {
-        int[] counts = wurf.GetCounts();
+        int[] counts = diceRoll.GetCounts();
 
         return counts.Any(c => c == 3) && counts.Any(c => c == 2);
     }

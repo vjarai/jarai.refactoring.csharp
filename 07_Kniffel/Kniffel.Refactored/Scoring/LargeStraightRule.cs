@@ -1,18 +1,21 @@
 namespace Kniffel.Refactored.Scoring;
 
+/// <summary>
+/// Scores a fixed value for a large straight.
+/// </summary>
 public class LargeStraightRule : ScoringRule
 {
-    public LargeStraightRule() : base(RuleId.LargeStraight, "Grosse Strasse")
+    public LargeStraightRule() : base("Large Straight")
     {
     }
 
-    public override ScoringResult CalculateScore(Wurf wurf)
+    public override Score CalculateScore(DiceRoll diceRoll)
     {
-        return new ScoringResult(CanCalculateScore(wurf) ? 40 : 0);
+        return new Score(CanCalculateScore(diceRoll) ? 40 : 0);
     }
 
-    public override bool CanCalculateScore(Wurf wurf)
+    public override bool CanCalculateScore(DiceRoll diceRoll)
     {
-        return wurf.GetCounts().Order().Skip(1).All(count => count == 1);
+        return diceRoll.GetCounts().Order().Skip(1).All(count => count == 1);
     }
 }

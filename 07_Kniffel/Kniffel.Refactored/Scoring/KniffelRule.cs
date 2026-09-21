@@ -1,18 +1,21 @@
 namespace Kniffel.Refactored.Scoring;
 
+/// <summary>
+/// Scores a fixed value when all five dice match.
+/// </summary>
 public class KniffelRule : ScoringRule
 {
-    public KniffelRule() : base(RuleId.Kniffel, "Kniffel")
+    public KniffelRule() : base("Kniffel")
     {
     }
 
-    public override ScoringResult CalculateScore(Wurf wurf)
+    public override Score CalculateScore(DiceRoll diceRoll)
     {
-        return new ScoringResult(CanCalculateScore(wurf) ? 50 : 0);
+        return new Score(CanCalculateScore(diceRoll) ? 50 : 0);
     }
 
-    public override bool CanCalculateScore(Wurf wurf)
+    public override bool CanCalculateScore(DiceRoll diceRoll)
     {
-        return wurf.GetCounts().Any(c => c == 5);
+        return diceRoll.GetCounts().Any(c => c == 5);
     }
 }

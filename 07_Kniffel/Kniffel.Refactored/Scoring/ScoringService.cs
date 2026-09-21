@@ -1,54 +1,46 @@
 namespace Kniffel.Refactored.Scoring;
 
+/// <summary>
+/// Calculates available scores for a dice roll.
+/// </summary>
 public class ScoringService
 {
     private readonly IEnumerable<ScoringRule> _rules;
 
     /// <summary>
-    ///     Constructor enables injection of Depencies
+    ///     Constructor enables injection of dependencies.
     /// </summary>
     public ScoringService(IEnumerable<ScoringRule> rules)
     {
         _rules = rules;
     }
 
-
     public ScoringService()
     {
         _rules = CreateRulesViaReflection();
     }
 
-    public ScoringResult CalculateScore(RuleId ruleId, Wurf wurf)
-    {
-        var rule = _rules.Single(r => r.RuleId == ruleId);
-
-        return rule.CalculateScore(wurf);
-    }
-
-    public IEnumerable<ScoringResult> CalculateScorings(Wurf wurf)
+    public IEnumerable<Score> CalculateScorings(DiceRoll diceRoll)
     {
         return from rule in _rules
-            let result = rule.CalculateScore(wurf)
-            where result.Score > 0
-            orderby result.Score descending
-            select new ScoringResult(result.Score, rule.RuleId, rule.RuleName);
+            let result = rule.CalculateScore(diceRoll)
+            where result.Points > 0
+            orderby result.Points descending
+            select new Score(result.Points, rule.RuleName);
     }
-
 
     public IEnumerable<ScoringRule> CreateRulesViaReflection()
     {
-        // Erst Count-Regeln in definierter Reihenfolge hinzufügen
         var rules = new List<ScoringRule>
         {
-            new CountRule(1, RuleId.Ones, "Einer"),
-            new CountRule(2, RuleId.Twos, "Zweier"),
-            new CountRule(3, RuleId.Threes, "Dreier"),
-            new CountRule(4, RuleId.Fours, "Vierer"),
-            new CountRule(5, RuleId.Fives, "Fünfer"),
-            new CountRule(6, RuleId.Sixes, "Sechser")
+            new CountRule(1, "Ones"),
+            new CountRule(2, "Twos"),
+            new CountRule(3, "Threes"),
+            new CountRule(4, "Fours"),
+            new CountRule(5, "Fives"),
+            new CountRule(6, "Sixes")
         };
 
-        // Restliche ScoringRule-Implementierungen per Reflection finden und instanzieren
         var asm = typeof(Program).Assembly;
         var ruleType = typeof(ScoringRule);
 
@@ -58,8 +50,7 @@ public class ScoringService
             .Select(t => (ScoringRule?)Activator.CreateInstance(t))
             .Where(r => r is not null)
             .Select(r => r!)
-            // Stabile Reihenfolge nach RuleId (enum) erzeugen
-            .OrderBy(r => (int)r.RuleId)
+            .OrderBy(r => r.GetType().Name)
             .ToList();
 
         rules.AddRange(reflectedRules);

@@ -1,18 +1,21 @@
 namespace Kniffel.Refactored.Scoring;
 
+/// <summary>
+/// Scores the sum of all dice when at least four match.
+/// </summary>
 public class FourOfAKindRule : ScoringRule
 {
-    public FourOfAKindRule() : base(RuleId.FourOfAKind, "Vierer Pasch")
+    public FourOfAKindRule() : base("Four of a Kind")
     {
     }
 
-    public override ScoringResult CalculateScore(Wurf wurf)
+    public override Score CalculateScore(DiceRoll diceRoll)
     {
-        return new ScoringResult(CanCalculateScore(wurf) ? wurf.Sum() : 0);
+        return new Score(CanCalculateScore(diceRoll) ? diceRoll.Sum() : 0);
     }
 
-    public override bool CanCalculateScore(Wurf wurf)
+    public override bool CanCalculateScore(DiceRoll diceRoll)
     {
-        return wurf.GetCounts().Any(c => c >= 4);
+        return diceRoll.GetCounts().Any(c => c >= 4);
     }
 }

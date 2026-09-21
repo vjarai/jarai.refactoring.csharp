@@ -1,21 +1,24 @@
 namespace Kniffel.Refactored.Scoring;
 
+/// <summary>
+/// Scores all dice matching a specific face value.
+/// </summary>
 public class CountRule : ScoringRule
 {
-    private readonly int _zielWert;
+    private readonly int _targetValue;
 
-    public CountRule(int zielWert, RuleId ruleId, string ruleName) : base(ruleId, ruleName)
+    public CountRule(int targetValue, string ruleName) : base(ruleName)
     {
-        _zielWert = zielWert;
+        _targetValue = targetValue;
     }
 
-    public override ScoringResult CalculateScore(Wurf wurf)
+    public override Score CalculateScore(DiceRoll diceRoll)
     {
-        return new ScoringResult(wurf.Count(wert => wert == _zielWert) * _zielWert);
+        return new Score(diceRoll.Count(value => value == _targetValue) * _targetValue);
     }
 
-    public override bool CanCalculateScore(Wurf wurf)
+    public override bool CanCalculateScore(DiceRoll diceRoll)
     {
-        return wurf.Any(wert => wert == _zielWert);
+        return diceRoll.Any(value => value == _targetValue);
     }
 }

@@ -1,27 +1,26 @@
 namespace Kniffel.Refactored.Scoring;
 
+/// <summary>
+/// Base type for all scoring rules.
+/// </summary>
 public abstract class ScoringRule
 {
     /// <summary>
-    ///     Default Construktor needed for Moq mocking
+    ///     Default constructor needed for Moq mocking
     /// </summary>
     public ScoringRule()
     {
         RuleName = string.Empty;
     }
 
-    protected ScoringRule(RuleId ruleId, string ruleName)
+    protected ScoringRule(string ruleName)
     {
         RuleName = ruleName;
-        RuleId = ruleId;
     }
 
     public string RuleName { get; private set; }
 
-    public RuleId RuleId { get; private set; }
+    public abstract Score CalculateScore(DiceRoll diceRoll);
 
-
-    public abstract ScoringResult CalculateScore(Wurf wurf);
-
-    public abstract bool CanCalculateScore(Wurf wurf);
+    public abstract bool CanCalculateScore(DiceRoll diceRoll);
 }

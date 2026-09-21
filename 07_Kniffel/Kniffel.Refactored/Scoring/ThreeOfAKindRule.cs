@@ -1,19 +1,22 @@
 namespace Kniffel.Refactored.Scoring;
 
+/// <summary>
+/// Scores the sum of all dice when at least three match.
+/// </summary>
 public class ThreeOfAKindRule : ScoringRule
 {
-    public ThreeOfAKindRule() : base(RuleId.ThreeOfAKind, "Dreier Pasch")
+    public ThreeOfAKindRule() : base("Three of a Kind")
     {
     }
 
-    public override ScoringResult CalculateScore(Wurf wurf)
+    public override Score CalculateScore(DiceRoll diceRoll)
     {
-        return new ScoringResult(CanCalculateScore(wurf) ? wurf.Sum() : 0);
+        return new Score(CanCalculateScore(diceRoll) ? diceRoll.Sum() : 0);
     }
 
-    public override bool CanCalculateScore(Wurf wurf)
+    public override bool CanCalculateScore(DiceRoll diceRoll)
     {
-        int[] counts = wurf.GetCounts();
+        int[] counts = diceRoll.GetCounts();
 
         return counts.Any(c => c >= 3);
     }
