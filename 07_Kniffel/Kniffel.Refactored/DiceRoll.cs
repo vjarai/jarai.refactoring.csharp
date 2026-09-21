@@ -24,7 +24,7 @@ public class DiceRoll : IEnumerable<int>
 
     public IEnumerator<int> GetEnumerator()
     {
-        return _dice.AsEnumerable().GetEnumerator();
+        return _dice.GetEnumerator();
     }
 
     IEnumerator IEnumerable.GetEnumerator()
