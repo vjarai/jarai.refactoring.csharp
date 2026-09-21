@@ -1,4 +1,4 @@
-namespace Kniffel.Refactored.ScoringRules;
+namespace Kniffel.Refactored.Scoring;
 
 internal class ChanceRule : ScoringRule
 {

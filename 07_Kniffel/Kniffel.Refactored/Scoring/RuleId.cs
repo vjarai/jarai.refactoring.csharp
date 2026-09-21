@@ -1,4 +1,4 @@
-namespace Kniffel.Refactored;
+namespace Kniffel.Refactored.Scoring;
 
 public enum RuleId
 {
