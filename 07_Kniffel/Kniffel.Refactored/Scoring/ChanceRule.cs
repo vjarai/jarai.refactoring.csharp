@@ -3,7 +3,7 @@ namespace Kniffel.Refactored.Scoring;
 /// <summary>
 /// Scores the sum of all dice.
 /// </summary>
-internal class ChanceRule : ScoringRule
+public class ChanceRule : ScoringRule
 {
     public ChanceRule() : base("Chance")
     {

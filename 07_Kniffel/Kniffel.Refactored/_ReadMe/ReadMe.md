@@ -1,26 +1,76 @@
-﻿# Kniffel Scoring Service
+# Kniffel.Refactored
 
-## Aufgabe
+A refactored console application that calculates the best scoring options for a given roll of five dice in the dice game **Kniffel** (also known as Yahtzee).
 
-Kniffel ist ein beliebtes Würfelspiel, bei dem es darauf ankommt, durch geschicktes Kombinieren der Augenzahlen möglichst viele Punkte zu erzielen. 
+## Project Info
 
-Es soll ein Programm geschrieben werden, dass zu einem gegebenen Wurf mit fünf Würfeln die Kombinationen mit den höchsten Punktzahlen berechnet, damit der Anweder eine davon auf seinen Kniffelblock übernehmen kann.
+| Property       | Value         |
+|----------------|---------------|
+| Target Framework | .NET 9      |
+| Output Type    | Console App   |
+| Namespace      | `Kniffel.Refactored` |
 
+## Architecture
 
-## Kombinationen
+The project follows the **Strategy Pattern**: each scoring rule is encapsulated in its own class derived from the abstract `ScoringRule` base class. The `ScoringService` aggregates all rules and evaluates them against a given `DiceRoll`.
 
-- Einser, Zweier, Dreier, Vierer, Fünfer, Sechser: Für diese Felder wird die Summe der entsprechenden Augenzahlen eingetragen. Zum Beispiel beim Dreier: Wenn Sie eine 3, eine 2 und zwei weitere 3en würfeln, tragen Sie 3+3+3 = 9 Punkte ein.
+```
+DiceRoll
+	└─► ScoringService
+			└─► ScoringRule (abstract)
+					├── CountRule          (Ones … Sixes)
+					├── ThreeOfAKindRule
+					├── FourOfAKindRule
+					├── FullHouseRule
+					├── SmallStraightRule
+					├── LargeStraightRule
+					├── KniffelRule
+					└── ChanceRule
+```
 
-- Dreierpasch: Für diese Kombination brauchen Sie mindestens dreimal dieselbe Zahl. Alle Augen, auch die Nicht-Dreier- werden anschließend zusammengezählt.
+## Key Classes
 
-- Viererpasch: Hierfür brauchen Sie mindestens viermal dieselbe Zahl und addieren anschließend auch die Augen des fünften Würfels.
+| Class | Namespace | Description |
+|---|---|---|
+| `DiceRoll` | `Kniffel.Refactored` | Represents a roll of 5 dice. Can be created randomly or from explicit values. |
+| `ScoringRule` | `Kniffel.Refactored.Scoring` | Abstract base class for all scoring rules. Defines `CalculateScore` and `IsApplicableTo`. |
+| `Score` | `Kniffel.Refactored.Scoring` | Immutable result object holding `RuleName` and `Points`. |
+| `ScoringService` | `Kniffel.Refactored.Scoring` | Evaluates all rules against a `DiceRoll` and returns applicable scores sorted by points descending. Rules are discovered via reflection or injected via constructor. |
 
-- Beim Full-House zählen Kombinationen aus einmal zwei und einmal drei gleichen Zahlen, z.B. 2+2+3+3+3. 25 Punkte werden in das Feld eintragen, egal welche Augenzahl die Würfel haben.
+## Scoring Rules
 
-- Die Kleine Straße benötigt entweder die Würfelkombination von vier aufeinanderfolgenden Zahlen, also von 1 bis 4, von 2 bis 5 oder von 3 bis 6. 30 Punkte werden in das Feld eintragen, wenn Sie die kleine Straße erwürfeln.
+| Rule | Points |
+|---|---|
+| Ones – Sixes | Sum of matching dice faces |
+| Three of a Kind | Sum of all dice (≥ 3 identical) |
+| Four of a Kind | Sum of all dice (≥ 4 identical) |
+| Full House | 25 pts (3 + 2 matching) |
+| Small Straight | 30 pts (4 consecutive values) |
+| Large Straight | 40 pts (5 consecutive values) |
+| Kniffel | 50 pts (5 identical) |
+| Chance | Sum of all dice (no condition) |
 
-- Große Straße: Hierfür brauchen Sie die Würfelkombination von fünf aufeinander folgenden Zahlen, also 1-5 oder 2-6. Dann können Sie 40 Punkte im Spielfeld notieren.
+## Running the App
 
-- Der Kniffel ist die am höchst bepunktete Kombination. Hier müssen Sie fünfmal die gleiche Zahl erwürfeln. 50 Punkte können Sie dann in das Feld eingetragen. 
+```bash
+dotnet run --project 07_Kniffel/Kniffel.Refactored/Kniffel.Refactored.csproj
+```
 
-- Bei der Chance muss nichts zusammenpassen. Hier zählt man alle Augen der gewürfelten Würfel querbeet. Deswegen ist es gut, diese aufzusparen. So brauchen Sie keine 0 Punkte im Spielblock eintragen, falls Sie keines der anderen Spielfelder erwürfeln konnten.
+The app rolls 5 dice, prints all applicable scores sorted by points, and asks whether to roll again.
+
+## Extensibility
+
+New rules can be added by:
+1. Creating a class that derives from `ScoringRule`.
+2. Implementing `CalculateScore(DiceRoll)` and `IsApplicableTo(DiceRoll)`.
+3. Providing a public parameterless constructor.
+
+The `ScoringService` discovers new rules automatically via reflection — no registration required.
+
+## Related Projects
+
+| Project | Description |
+|---|---|
+| `Kniffel.Original` | Legacy monolithic implementation (before refactoring) |
+| `Kniffel.Original.Tests` | Tests for the original code |
+| `Kniffel.Refactored.Tests` | Tests for the refactored code |
