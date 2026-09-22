@@ -1,7 +1,7 @@
 namespace Kniffel.Refactored.Scoring;
 
 /// <summary>
-/// Scores a fixed value for a large straight.
+/// Represents the large straight rule and returns a fixed score when applicable.
 /// </summary>
 public class LargeStraightRule : ScoringRule
 {

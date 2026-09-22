@@ -28,7 +28,7 @@ public class ScoringService
     /// Calculates all available scores for the given dice roll.
     /// </summary>
     /// <param name="diceRoll">The dice roll to evaluate.</param>
-    /// <returns>A descending list of scores with points greater than zero.</returns>
+    /// <returns>A descending list of scores for all applicable rules.</returns>
     public IEnumerable<Score> CalculateScores(DiceRoll diceRoll)
     {
         return from rule in _rules

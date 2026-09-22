@@ -1,7 +1,7 @@
 namespace Kniffel.Refactored.Scoring;
 
 /// <summary>
-/// Scores a fixed value when all five dice match.
+/// Represents the Kniffel rule and returns a fixed score when applicable.
 /// </summary>
 public class KniffelRule : ScoringRule
 {

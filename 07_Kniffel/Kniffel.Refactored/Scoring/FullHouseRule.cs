@@ -1,7 +1,7 @@
 namespace Kniffel.Refactored.Scoring;
 
 /// <summary>
-/// Scores a fixed value for a full house pattern.
+/// Represents the full house rule and returns a fixed score when applicable.
 /// </summary>
 public class FullHouseRule : ScoringRule
 {

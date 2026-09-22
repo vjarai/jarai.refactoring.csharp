@@ -1,7 +1,7 @@
 namespace Kniffel.Refactored.Scoring;
 
 /// <summary>
-/// Scores a fixed value for a small straight.
+/// Represents the small straight rule and returns a fixed score when applicable.
 /// </summary>
 public class SmallStraightRule : ScoringRule
 {
