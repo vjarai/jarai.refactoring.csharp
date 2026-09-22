@@ -9,9 +9,9 @@ public class SmallStraightRule : ScoringRule
     {
     }
 
-    public override Score CalculateScore(DiceRoll diceRoll)
+    public override int CalculatePoints(DiceRoll diceRoll)
     {
-        return new Score(IsApplicableTo(diceRoll) ? 30 : 0);
+        return 30;
     }
 
     public override bool IsApplicableTo(DiceRoll diceRoll)

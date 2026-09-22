@@ -29,6 +29,7 @@ public class DiceRoll : IEnumerable<int>
         if (dice.Length != 5)
             throw new ArgumentException("A dice roll must contain exactly 5 numbers.");
 
+        _dice = dice.Order().ToArray();
     }
 
     public IEnumerator<int> GetEnumerator()

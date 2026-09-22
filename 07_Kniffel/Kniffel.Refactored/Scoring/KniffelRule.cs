@@ -9,9 +9,9 @@ public class KniffelRule : ScoringRule
     {
     }
 
-    public override Score CalculateScore(DiceRoll diceRoll)
+    public override int CalculatePoints(DiceRoll diceRoll)
     {
-        return new Score(IsApplicableTo(diceRoll) ? 50 : 0);
+        return 50;
     }
 
     public override bool IsApplicableTo(DiceRoll diceRoll)

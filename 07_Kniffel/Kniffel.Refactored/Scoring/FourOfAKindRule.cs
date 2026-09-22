@@ -9,9 +9,9 @@ public class FourOfAKindRule : ScoringRule
     {
     }
 
-    public override Score CalculateScore(DiceRoll diceRoll)
+    public override int CalculatePoints(DiceRoll diceRoll)
     {
-        return new Score(IsApplicableTo(diceRoll) ? diceRoll.Sum() : 0);
+        return diceRoll.Sum();
     }
 
     public override bool IsApplicableTo(DiceRoll diceRoll)

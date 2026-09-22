@@ -12,9 +12,9 @@ public class CountRule : ScoringRule
         _targetValue = targetValue;
     }
 
-    public override Score CalculateScore(DiceRoll diceRoll)
+    public override int CalculatePoints(DiceRoll diceRoll)
     {
-        return new Score(diceRoll.Count(value => value == _targetValue) * _targetValue);
+        return diceRoll.Count(value => value == _targetValue) * _targetValue;
     }
 
     public override bool IsApplicableTo(DiceRoll diceRoll)

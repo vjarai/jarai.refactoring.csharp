@@ -9,9 +9,9 @@ public class FullHouseRule : ScoringRule
     {
     }
 
-    public override Score CalculateScore(DiceRoll diceRoll)
+    public override int CalculatePoints(DiceRoll diceRoll)
     {
-        return new Score(IsApplicableTo(diceRoll) ? 25 : 0);
+        return 25;
     }
 
     public override bool IsApplicableTo(DiceRoll diceRoll)

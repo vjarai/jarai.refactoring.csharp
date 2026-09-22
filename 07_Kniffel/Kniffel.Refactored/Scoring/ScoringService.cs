@@ -32,10 +32,11 @@ public class ScoringService
     public IEnumerable<Score> CalculateScores(DiceRoll diceRoll)
     {
         return from rule in _rules
-            let result = rule.CalculateScore(diceRoll)
-            where result.Points > 0
-            orderby result.Points descending
-            select new Score(result.Points, rule.RuleName);
+               where rule.IsApplicableTo(diceRoll)
+               let points = rule.CalculatePoints(diceRoll)
+               //where result.Points > 0
+               orderby points descending
+               select new Score(points, rule.RuleName);
     }
 
     /// <summary>

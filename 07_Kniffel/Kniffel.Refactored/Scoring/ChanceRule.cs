@@ -9,9 +9,9 @@ public class ChanceRule : ScoringRule
     {
     }
 
-    public override Score CalculateScore(DiceRoll diceRoll)
+    public override int CalculatePoints(DiceRoll diceRoll)
     {
-        return new Score(diceRoll.Sum());
+        return diceRoll.Sum();
     }
 
     public override bool IsApplicableTo(DiceRoll diceRoll)

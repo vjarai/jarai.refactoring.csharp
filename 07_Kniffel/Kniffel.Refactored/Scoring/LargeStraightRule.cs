@@ -9,13 +9,16 @@ public class LargeStraightRule : ScoringRule
     {
     }
 
-    public override Score CalculateScore(DiceRoll diceRoll)
+    public override int CalculatePoints(DiceRoll diceRoll)
     {
-        return new Score(IsApplicableTo(diceRoll) ? 40 : 0);
+        return 40;
     }
 
     public override bool IsApplicableTo(DiceRoll diceRoll)
     {
-        return diceRoll.GetCounts().Order().Skip(1).All(count => count == 1);
+        var sequence = diceRoll.Distinct().OrderBy(value => value).ToArray();
+
+        return sequence.SequenceEqual([1, 2, 3, 4, 5])
+            || sequence.SequenceEqual([2, 3, 4, 5, 6]);
     }
 }

@@ -5,9 +5,9 @@ namespace Kniffel.Refactored.Scoring;
 /// </summary>
 public class Score
 {
-    public Score(int points, string? ruleName = null)
+    public Score(int points, string ruleName)
     {
-        RuleName = ruleName ?? string.Empty;
+        RuleName = ruleName;
         Points = points;
     }
 
@@ -16,6 +16,6 @@ public class Score
 
     public override string ToString()
     {
-        return $"{RuleName} \t: {Points}";
+        return $"{RuleName,-20} : {Points}";
     }
 }
