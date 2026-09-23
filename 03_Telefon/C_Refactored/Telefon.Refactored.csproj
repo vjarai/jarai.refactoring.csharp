@@ -54,7 +54,6 @@
     <Compile Include="Zustand.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="_ReadMe\ClassDiagram1.cd" />
     <None Include="_ReadMe\Telefonzustand.pdf" />
     <None Include="_ReadMe\zustand.pdf" />

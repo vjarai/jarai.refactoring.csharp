@@ -48,7 +48,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="_ReadMe\ClassDiagram1.cd" />
     <None Include="_ReadMe\Kniffel_Regeln.pdf" />
     <None Include="_ReadMe\Kniffel_Vorlage.pdf" />

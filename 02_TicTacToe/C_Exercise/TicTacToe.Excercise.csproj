@@ -51,7 +51,6 @@
     <Compile Include="UserInterface.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="_ReadMe\ClassDiagram1.cd" />
   </ItemGroup>
   <ItemGroup>
