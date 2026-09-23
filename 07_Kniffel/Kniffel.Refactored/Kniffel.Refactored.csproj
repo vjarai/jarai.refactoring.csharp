@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="..\..\_ReadMe\martin-fowler-refactoring-2nd-edition-before-after-examples.md" Link="_ReadMe\martin-fowler-refactoring-2nd-edition-before-after-examples.md" />
+    <None Include="..\..\_ReadMe\martin-fowler-refactoring-2nd-edition-checklist.md" Link="_ReadMe\martin-fowler-refactoring-2nd-edition-checklist.md" />
+  </ItemGroup>
+
 </Project>
