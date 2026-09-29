@@ -1,6 +1,6 @@
 # Martin Fowler — Refactoring 2nd Edition (Before/After Examples)
 
-This file provides concise C# before/after examples for all refactorings listed in `_ReadMe/martin-fowler-refactoring-2nd-edition-checklist.md`.
+This file provides concise C# before/after examples for all refactorings 
 
 ## 1) Combine Functions into Class
 - Before: `decimal BaseCharge(Reading r)=>r.Qty*r.Rate; decimal Taxable(Reading r)=>Math.Max(0, BaseCharge(r)-100);`
