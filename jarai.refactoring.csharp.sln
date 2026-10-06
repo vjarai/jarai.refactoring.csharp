@@ -107,6 +107,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zahlenraten.Excercise.Tests
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kniffel.Refactored.Tests", "07_Kniffel\Kniffel.Refactored.Tests\Kniffel.Refactored.Tests.csproj", "{A9C8E387-8F60-ED32-0B57-DBC69BCB5014}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".ReadMe", ".ReadMe", "{857A98DA-85B4-4057-A953-036598CFFA6F}"
+	ProjectSection(SolutionItems) = preProject
+		2.4 Fallstricke der KI-Testgenerierung.md = 2.4 Fallstricke der KI-Testgenerierung.md
+		2.5 Best Practices der KI Testgenerierung.md = 2.5 Best Practices der KI Testgenerierung.md
+		2.6 TDD im Zeitalter von KI.md = 2.6 TDD im Zeitalter von KI.md
+		_ReadMe\Refactoring Catalog Examples.md = _ReadMe\Refactoring Catalog Examples.md
+		_ReadMe\Refactoring Catalog.md = _ReadMe\Refactoring Catalog.md
+		_ReadMe\Refactoring.pptx = _ReadMe\Refactoring.pptx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

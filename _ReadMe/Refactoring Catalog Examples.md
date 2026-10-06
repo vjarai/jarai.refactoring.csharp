@@ -1,4 +1,4 @@
-# Martin Fowler — Refactoring 2nd Edition (Before/After Examples)
+# Martin Fowler — Refactoring Catalog (Before/After Examples)
 
 This file provides concise C# before/after examples for all refactorings 
 

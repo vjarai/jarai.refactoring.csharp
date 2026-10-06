@@ -1,4 +1,4 @@
-# Martin Fowler — Refactoring 2nd Edition Checklist
+# Martin Fowler — Refactoring Catalog
 
 **Source:** *Refactoring: Improving the Design of Existing Code*, 2nd Edition, Martin Fowler with Kent Beck, 2018.
 
