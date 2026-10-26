@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.3.32825.248
+# Visual Studio Version 18
+VisualStudioVersion = 18.11.12306.390 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Kniffel", "02 Kniffel", "{D3A0846A-AAD5-4A1D-9AB7-2C9A6CD37E14}"
 EndProject
@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kniffel.Original", "Kniffel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kniffel.Original.Tests", "Kniffel.Original.Tests\Kniffel.Original.Tests.csproj", "{920B4F4D-DE7B-4459-A9FE-E7694A419D41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kniffel.Refactored1", "Kniffel.Refactored1\Kniffel.Refactored1.csproj", "{F0C3185F-9344-4893-99AC-2EFB472E3B54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kniffel.Refactored", "Kniffel.Refactored\Kniffel.Refactored.csproj", "{3818E792-488A-C136-B45F-BF482481FB43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kniffel.Refactored1.Tests", "Kniffel.Refactored1.Tests\Kniffel.Refactored1.Tests.csproj", "{6BED8C43-3B1D-441A-A501-280C344243C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kniffel.Refactored.Tests", "Kniffel.Refactored.Tests\Kniffel.Refactored.Tests.csproj", "{BE78C74D-3008-D960-F784-33247EF524A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,14 +27,14 @@ Global
 		{920B4F4D-DE7B-4459-A9FE-E7694A419D41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{920B4F4D-DE7B-4459-A9FE-E7694A419D41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{920B4F4D-DE7B-4459-A9FE-E7694A419D41}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F0C3185F-9344-4893-99AC-2EFB472E3B54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F0C3185F-9344-4893-99AC-2EFB472E3B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F0C3185F-9344-4893-99AC-2EFB472E3B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F0C3185F-9344-4893-99AC-2EFB472E3B54}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6BED8C43-3B1D-441A-A501-280C344243C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6BED8C43-3B1D-441A-A501-280C344243C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6BED8C43-3B1D-441A-A501-280C344243C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6BED8C43-3B1D-441A-A501-280C344243C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3818E792-488A-C136-B45F-BF482481FB43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3818E792-488A-C136-B45F-BF482481FB43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3818E792-488A-C136-B45F-BF482481FB43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3818E792-488A-C136-B45F-BF482481FB43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE78C74D-3008-D960-F784-33247EF524A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE78C74D-3008-D960-F784-33247EF524A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE78C74D-3008-D960-F784-33247EF524A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE78C74D-3008-D960-F784-33247EF524A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,8 +42,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{578D5B76-73C2-472B-B949-38F73B398CA1} = {D3A0846A-AAD5-4A1D-9AB7-2C9A6CD37E14}
 		{920B4F4D-DE7B-4459-A9FE-E7694A419D41} = {D3A0846A-AAD5-4A1D-9AB7-2C9A6CD37E14}
-		{F0C3185F-9344-4893-99AC-2EFB472E3B54} = {D3A0846A-AAD5-4A1D-9AB7-2C9A6CD37E14}
-		{6BED8C43-3B1D-441A-A501-280C344243C7} = {D3A0846A-AAD5-4A1D-9AB7-2C9A6CD37E14}
+		{3818E792-488A-C136-B45F-BF482481FB43} = {D3A0846A-AAD5-4A1D-9AB7-2C9A6CD37E14}
+		{BE78C74D-3008-D960-F784-33247EF524A1} = {D3A0846A-AAD5-4A1D-9AB7-2C9A6CD37E14}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E9AD74A1-21F6-440A-A4C6-7A5F99728DAD}
